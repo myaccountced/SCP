@@ -56,8 +56,6 @@ a:hover{
 }
 
 
-
-
 /** HomePage Styles **/
 
 .bg-help{
@@ -92,9 +90,6 @@ a:hover{
 
 
 @media (max-width: 767px){
-    p{
-        font-size: 18px;
-    }
 
     .contactInfo .contactContent{
         display: block;
