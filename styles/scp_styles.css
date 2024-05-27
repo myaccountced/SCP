@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+
+
+
+/** Site Styling **/
+
+.btn{
+    border-color: #332701;
+}
+
+.btn-primary{
+    font-weight: bold;
+}
+
+.btn-donate{
+    background-color: #16731b;
+}
+
+.btn-donate:hover{
+    background-color: #125e16;
+}
+
+.btn-adopt{
+    background-color: #0093FF;
+}
+.btn-adopt:hover{
+    background-color: #0177cd;
+}
+
+.btn-volunteer{
+    background-color: #cd1b1b;
+}
+
+.btn-volunteer:hover{
+    background-color: #a31717;
+}
+
+a{
+    text-decoration: none;
+    color: #0056b3;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.bg-bodyColour{
+    background-color: #9dd6ef;
+}
+
+@media (max-width: 767px) {
+    p {
+        font-size: 18px;
+    }
+}
+
+
+
+
+/** HomePage Styles **/
+
+.bg-help{
+    background-color: #f37c18;
+}
+
+.bg-homeLoad{
+    background-color: #d3ce9f;
+}
+
+/** Footer styles **/
+.bg-footerColour{
+    background-color: #c39269; /* sets the background to a light brown colour */
+    padding: 20px 0;
+}
+
+.text-italic{
+    font-style: italic;
+}
+
+.contactInfo{
+    line-height: 1.5;
+}
+
+.contactInfo .contactLabel .contactContent{
+    display: inline-block;
+}
+
+#scpNameFooter{
+    font-size: xx-large;
+}
+
+
+@media (max-width: 767px){
+    p{
+        font-size: 18px;
+    }
+
+    .contactInfo .contactContent{
+        display: block;
+    }
+
+    .contactContent{
+        padding-left: 10px;
+    }
+}

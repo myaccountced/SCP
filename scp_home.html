@@ -6,13 +6,40 @@
     <title>SCP Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/styles_footer.css">
+    <link rel="stylesheet" href="styles/scp_styles.css">
     <script src="scripts/bootstrap.min.js"></script>
 </head>
-<body class="">
+<body class="bg-bodyColour">
 
-<footer class="custom-bg border border-black rounded-top-5 pb-0 pt-0">
-    <div class="container">
+<div class="container">
+    <img class="" src="images/dog_banner_adobepreview.png" alt="Dog Banner Image" width="100%">
+    <div class="row border border-black p-1 rounded-2 bg-homeLoad">
+        <div class="col-8">
+            <h1>Our Mission</h1>
+            <p>At Second Chance Pups, we believe every dog deserves a second chance at life. Our mission is to rescue,
+                rehabilitate, and rehome dogs who have been abandoned, neglected, or abused. We provide a safe and
+                loving environment where these dogs can heal and thrive, preparing them for their forever homes.</p>
+        </div>
+        <div class="col-4 rounded-5 bg-help">
+            <h1 class="fw-bold text-center p-2">HELP NOW</h1>
+            <div class="d-flex flex-column p-3">
+                <a href="#" class="btn btn-primary btn-adopt">ADOPT</a>
+                <a href="#" class="btn btn-primary btn-volunteer">VOLUNTEER</a>
+                <a href="#" class="btn btn-primary btn-donate">DONATE</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+
+    </div>
+</div>
+
+
+
+
+
+<footer class="bg-footerColour border border-black rounded-top-5 pt-1 pb-0">
+    <div class="container ">
         <div class="row">
             <!-- About Section appears at tops of footer on mobile, uses middle column on full browser view -->
             <div class="col-12 col-md-4 order-1 order-md-2">
@@ -31,7 +58,7 @@
                 <div id="footerOrg" class="mb-4 d-flex align-items-center p-2">
                     <img src="images/SecondChancePupsLogoTransparent.png" alt="Second Chance Pups Logo" height="120px" width="120px">
                     <div class="">
-                        <h2 id="scpLogoName" class="d-flex flex-column d-md-inline-block align-items-md-start text-md-center"><span>Second</span> <span>Chance</span> <span>Pups</span></h2>
+                        <h2 id="scpNameFooter" class="d-flex flex-column d-md-inline-block align-items-md-start text-md-center"><span>Second</span> <span>Chance</span> <span>Pups</span></h2>
                         <h4 class="d-none d-md-block text-center">Rescue and Rehabilitation</h4>
                     </div>
                 </div>
@@ -60,7 +87,7 @@
                     </div>
                 </div>
                 <div id="footerDonate" class="p-2">
-                    <a id="donateBtn" href="#" class="btn btn-primary btn-lg btn-block rounded-pill w-100 btn-colour">Donate Now</a>
+                    <a id="donateBtn" href="#" class="btn btn-primary btn-lg btn-block w-100 btn-donate">DONATE NOW</a>
                 </div>
                 <div id="footerCharity" class="p-3">
                     <p class="text-center">Non-Profit Organization<br/> EIN: 12-3456789</p>
