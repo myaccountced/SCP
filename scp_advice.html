@@ -2,18 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCP Advice</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/scp_styles.css">
+    <script src="scripts/bootstrap.min.js"></script>
+
+    <style>
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1%;
+            padding-left: 15%;
+        }
+
+        .nav-container {
+            /*flex-grow: 1;*/
+            display: flex;
+            justify-content: flex-start; /* Align items to the right */
+            border: 1px solid black; /* Add border to nav-container */
+            /*overflow: hidden; !* Hide overflowing content *!*/
+            margin: 0 10% 0 10%;
+        }
+
+        .nav-item {
+            display: flex; /* Make the menu items flex containers */
+            align-items: center; /* Align items vertically */
+            border-left: 1px solid #ccc; /* Add divider between menu items */
+            padding: 0 4dvw 0 4dvw; /* Add padding to each menu item */
+        }
+
+        /* header logo styles */
+         #headerLogo {
+            display: flex;
+            align-items: center;
+            border: 1px solid black; /* Add border */
+            border-radius: 5px; /* Optional: Add rounded corners */
+            padding: .5%; /* Add padding */
+        }
+
+        #headerLogo p {
+            margin: 0; /* Remove default margin */
+        }
+
+        #headerLogo strong {
+            font-size: 110%;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!--header-->
-    <div>
-        <img src="images/SecondChancePupsLogo.png" height="100" width="100"/>
-        <p>Second Chance Pups</p>
-        <p>Rescue and Rehabilitation</p>
+<div class="header-container">
+    <div id="headerLogo">
+        <img src="images/SecondChancePupsLogo.png" height="100" width="100" alt="Second Chance Pups Logo">
+        <div>
+            <p><strong>Second Chance Pups</strong></p>
+            <p>Rescue and Rehabilitation</p>
+        </div>
     </div>
+    <div class="nav-container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <span class="bi bi-house-door-fill"></span>
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="images/paw.png" height="25" width="25"/>
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item active">
+                        <span class="bi bi-info-circle-fill"></span>
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="bi bi-telephone-fill"></span>
+                        <a class="nav-link" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!--<div>-->
+<!--    <img src="images/SecondChancePupsLogo.png" height="100" width="100"/>-->
+<!--    <p>Second Chance Pups</p>-->
+<!--    <p>Rescue and Rehabilitation</p>-->
+<!--</div>-->
 
     <div> <!--navigation links-->
         <ul>
@@ -30,6 +113,11 @@
             <li><a href="scp_contact.html">Contact/Find Us</a></li>
         </ul>
     </div>
+
+
+
+
+
 
     <!--body-->
     <div>
@@ -49,8 +137,124 @@
     <div>
         <h1>Supplies Checklist</h1>
 
+        <div>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+            <h2>Dog Necessities for the Car Ride Home</h2>
+            <p>
+                One of the first experiences you’ll share with your new pup is the car ride home. Make sure the ride home is comfortable for everyone with these new dog essentials:
+            </p>
+            <img src="images/dogSupp1.png" height="120" width="188"/>
+            <p>
+                •	Dog Collar. Although a slip lead takes the place of both a collar and a leash, you’ll want your new pup to have a real dog collar as soon as possible. Don’t forget to attach an identification tag to your pup’s collar with important information, such as your pet’s name and your phone number.
+                •	Pet carrier or crate. While it may be tempting to drive home with your dog on your lap, the fact remains that a crate or pet carrier is the safest way for your furry friend to travel
+                •	Paper towels. Most adult dogs have plenty of experience riding in cars, but new puppies will often get carsick. You may want to keep a roll of paper towels in your car so you can contain potential messes.
+                •	Food and water. If you’re traveling a long distance to pick up your new furry friend, you’ll need to pack some food and water for your pet. But remember to go easy on the food — you don’t want to upset your pup’s tummy!
+            </p>
+        </div>
+
+        <div>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+            <h2>Dog Necessities for Feeding</h2>
+            <p>
+                Don’t forget to check in with animal rescue at least a few days before picking up your dog and find out which dog food brand they're currently eating. Even if you decide to switch your dog's food, you'll want to slowly transition them to the new food to avoid an upset tummy.
+            </p>
+            <img src="images/dogSupp2.png" height="120" width="188"/>
+            <p>
+                •	Food bowls. From slow feeder bowls to elevated food bowls, there’s a dog food bowl for every pup these days. For example, if your pet has a short snout, you might want to buy a bowl with a tilted structure that makes it easier for them to eat. Likewise, if you have a large breed dog, you can buy a set of elevated dog food bowls that allows for neater and more comfortable eating.
+                •	Dog food placemat (optional). Whether you have a messy eater or just want to jazz up your dog’s food station, a dog placemat is a fun and functional addition to your home.
+            </p>
+        </div>
+
+        <div>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+            <h2>Dog Necessities for Playtime and Entertainment</h2>
+            <p>
+                Your sweet little pup needs both physical and mental stimulation to stay happy, healthy and fit. While walking is undoubtedly a great activity for your dog, there will likely be times when you find yourself stuck indoors with a bored dog. Fortunately, there are plenty of items that can help your furry friend release some of that pent-up puppy energy.
+            </p>
+            <img src="images/dogSupp3.png" height="120" width="188"/>
+            <p>
+                •	Teething toys. Puppies start teething around four to five months of age, so you’ll want to have plenty of chew toys on hand to ease their discomfort.
+                •	Interactive toys. Interactive toys help build the bond between you and your pup. For example, you could play fetch with a ball or tug-of-war with a rope toy.
+                •	Enrichment toys. Designed to work your pup’s brain, enrichment toys are fun to bust out on rainy days. Treat dispensers, puzzle toys and licking pads are just a few examples of enrichment toys for dogs.
+            </p>
+        </div>
+
+        <div>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+            <h2>Dog Necessities for Your Daily Walks</h2>
+            <p>
+                Daily physical activity is important for your dog, but just letting them run around in the backyard every day isn't going to cut it. To keep Fido happy and healthy, you also need to be taking them out for regular walks.
+            </p>
+            <img src="images/dogSupp4.png" height="120" width="188"/>
+            <p>
+                •	Dog harness. Whether your dog has zero leash manners or goes ballistic whenever they see a squirrel, a high-quality dog harness will help keep the pressure off your dog’s sensitive neck and give you more control over your furry friend.
+                •	Dog leash. There are many different styles of dog leashes, and the right one for you depends on numerous factors, such as the size and strength of your dog.
+                •	Poop bags. Not only is picking up your poop the neighborly thing to do, but it also helps prevent the spread of disease.
+            </p>
+        </div>
+
+        <div>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+            <h2>Dog Necessities for Grooming</h2>
+            <p>
+                Taking your dog to a groomer can be stressful — not to mention expensive. Fortunately, there are plenty of at-home grooming tools to help you get the job done in a more comfortable setting.
+            </p>
+            <img src="images/dogSupp5.png" height="120" width="188"/>
+            <p>
+                •	Nail clippers or grinders. There are two ways to shorten your dog’s nails: clipping them with scissor-style clippers or grinding them down with an electricity-powered rotary tool (aka, grinders).
+                •	Dog shampoo. It’s only a matter of time before your dog rolls in something that makes you want to gag (it happens to the best of us). You can get them back to a squeaky-clean state with a dog shampoo containing naturally-derived ingredients, such as colloidal oatmeal.
+                •	Dog brush. Before your pup hops in the bath, you’ll want to brush down their coat to remove any loose fur or debris. If you have a short-haired dog, look for a brush with shorter bristles. Conversely, if your dog has longer hair, choose a brush with longer bristles.
+                •	Dog toothbrush and toothpaste. Just like people, dogs should ideally have their teeth cleaned twice a day.
+            </p>
+        </div>
     </div>
 
+
+    <div>
+        <h1>Suggested Articles</h1>
+
+        <div>
+            <img src="images/dogArtic1.png" height="178" width="267"/>
+            <a href="https://www.akc.org/expert-advice/health/why-do-dogs-run-away/">Why Do Dogs Run Away?</a>
+            <p>Safety</p>
+        </div>
+
+        <div>
+            <img src="images/dogArtic2.png" height="178" width="267"/>
+            <a href="https://www.akc.org/expert-advice/health/dry-your-dog/">How to Dry Your Dog Completely </a>
+            <p>Health</p>
+        </div>
+
+        <div>
+            <img src="images/dogArtic3.png" height="178" width="267"/>
+            <a href="https://www.akc.org/expert-advice/health/dog-noise-sensitive/">Is Your Dog Noise Sensitive? Sources of Anxiety You May Not Even Notice</a>
+            <p>Health</p>
+        </div>
+
+        <div>
+            <img src="images/dogArtic4.png" height="178" width="267"/>
+            <a href="https://www.akc.org/expert-advice/health/dog-clothes-weather-safety/">How to Get Your Dog Comfortable Wearing Clothes for Hot and Cold Weather</a>
+            <p>Safety</p>
+        </div>
+
+        <div>
+            <img src="images/dogArtic5.png" height="178" width="267"/>
+            <a href="https://www.akc.org/expert-advice/health/health-benefits-of-dog-ownership/">The Health Benefits of Being a Dog Owner</a>
+            <p>Health</p>
+        </div>
+
+        <div>
+            <img src="images/dogArtic6.png" height="178" width="267"/>
+            <a href="https://www.phillyvoice.com/dog-behavior-what-do-these-actions-mean-doggie-designer-0599973/">Dog Behavior: What Do These 9 Actions Mean?</a>
+            <p>Health</p>
+        </div>
+
+        <div>
+            <img src="images/dogArtic7.png" height="178" width="267"/>
+            <a href="https://www.rd.com/list/foods-dogs-cant-eat/">18 Human Foods Dogs Can’t Eat, According to Vets</a>
+            <p>Health</p>
+        </div>
+    </div>
 
 </body>
 

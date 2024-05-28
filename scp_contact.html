@@ -2,10 +2,284 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCP Contact</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/scp_styles.css">
+    <script src="scripts/bootstrap.min.js"></script>
 </head>
 <body>
+
+<div>
+    <h1>Contacts</h1>
+    <div>
+        <span class="bi bi-map"></span>
+        <p><strong>Address:</strong>stuff</p>
+    </div>
+
+    <div>
+        <span class="bi bi-telephone"></span>
+        <p><strong>Phone:</strong>stuff</p>
+    </div>
+
+    <div>
+        <span class="bi bi-envelope-fill"></span>
+        <p><strong>Email:</strong>stuff</p>
+    </div>
+
+    <div>
+        <span class="bi bi-globe"></span>
+        <p><strong>Website</strong>stuff</p>
+    </div>
+</div>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1540.392693392587!2d-106.67887002050084!3d52.128499241082494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTLCsDA3JzQyLjAiTiAxMDbCsDQwJzQ5LjMiVw!5e1!3m2!1sen!2sca!4v1716915331302!5m2!1sen!2sca"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<!--form-->
+<div>
+    <h1>Reach Us</h1>
+
+    <form action="#" method="post">
+        <div>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div>
+            <label for="purpose">Purpose:</label>
+            <select id="purpose" name="purpose">
+                <option value="question">Question</option>
+                <option value="donation">Donation</option>
+                <option value="volunteering">Volunteering</option>
+            </select>
+        </div>
+        <button type="submit">Send Message</button>
+        <img src="images/dogForm.png" height="279" width="250"/>
+    </form>
+</div>
+
+<div>
+    <h1>Frequently Asked Questions</h1>
+    <p>
+        Welcome to our dog rescue center's FAQ section! We understand that adopting a furry friend comes with many questions, and we're here to provide answers to the most common inquiries. Whether you're curious about our adoption process, the care we provide to our rescue dogs, or how you can get involved as a volunteer, you'll find the information you need right here. Explore our FAQ to learn more about our mission, our commitment to animal welfare, and how together, we can make a difference in the lives of these wonderful dogs. If you can't find the answer you're looking for, don't hesitate to reach out to our dedicated team – we're always happy to assist you on your journey to finding your perfect canine companion.
+    </p>
+    <img src="images/dogFAQ.png" height="200" width="150"/>
+</div>
+
+<div>
+    <div>
+        <h2>General Information</h2>
+
+        <div>
+            <h3>How does your dog rescue center operate?</h3>
+            <p>
+                Our dog rescue center operates as a non-profit organization dedicated to rescuing, rehabilitating, and rehoming dogs in need. We rely on the support of volunteers, donations, and community partnerships to fulfill our mission.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+        <div>
+            <h3>What types of dogs do you rescue?</h3>
+            <p>
+                We rescue dogs of all breeds, ages, and sizes. Our priority is to help dogs that are homeless, abandoned, or at risk of euthanasia in shelters. Each dog receives necessary medical care, behavioral assessment, and love while they await adoption.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+        <div>
+            <h3>How can I visit your rescue center?</h3>
+            <p>
+                We welcome visitors by appointment to ensure a personalized experience for each guest. Please contact us via phone or email to schedule a visit and learn more about our facility, our dogs, and how you can get involved.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+        <div>
+            <h3>Are you a no-kill rescue center?</h3>
+            <p>
+                Yes, we are proud to be a no-kill rescue center. We believe that every dog deserves a chance at a happy and fulfilling life, and we are committed to providing a safe haven for dogs until they find their forever homes.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+        <div>
+            <h3>How can I stay updated on your rescue center's activities and events?</h3>
+            <p>
+                You can stay updated on our rescue center's activities, upcoming events, and available dogs by following us on social media, subscribing to our newsletter, or regularly visiting our website's news section.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+    </div>
+
+    <div>
+        <h2>Adoption Process</h2>
+
+        <div>
+            <h3>What is the process for adopting a dog from your rescue center?</h3>
+            <p>
+                Our adoption process begins with filling out an adoption application form, followed by a thorough review of the application by our adoption team. If approved, we'll schedule a meet-and-greet with the dog(s) you're interested in. Once a match is made, we'll finalize the adoption paperwork and provide you with all necessary information and resources for a successful transition.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+        <div>
+            <h3>What are the requirements for adopting a dog?</h3>
+            <p>
+                We require potential adopters to be at least 18 years old, have stable housing, and be able to provide a loving and responsible forever home for the dog. We also conduct home visits and reference checks as part of the adoption process.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+        <div>
+            <h3>Are your dogs spayed/neutered and vaccinated before adoption?</h3>
+            <p>
+                Yes, all dogs available for adoption are spayed/neutered, up-to-date on vaccinations, and microchipped. We prioritize the health and well-being of our dogs and ensure they receive necessary medical care before finding their forever homes.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+        <div>
+            <h3>Can I adopt a dog if I live outside your area?</h3>
+            <p>
+                Yes, we consider adoption applications from out-of-area applicants; however, we may require additional steps such as virtual meetings and references from local veterinarians or rescue organizations.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+        <div>
+            <h3>Is there an adoption fee?</h3>
+            <p>
+                Yes, there is an adoption fee that helps cover the cost of the dog's medical care, food, and other expenses incurred during their stay at our rescue center. The adoption fee varies depending on the dog's age, breed, and medical needs.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+    </div>
+
+    <div>
+        <h2>Facilities</h2>
+
+        <div>
+            <h3>What are the facilities like at your rescue center?</h3>
+            <p>
+                Our rescue center features comfortable indoor kennels, spacious outdoor play areas, and dedicated spaces for training, grooming, and medical care. We prioritize the safety, comfort, and well-being of our dogs and ensure they have a clean and enriching environment while in our care.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+        <div>
+            <h3>Do you provide training and socialization for the dogs?</h3>
+            <p>
+                Yes, we have a team of experienced staff and volunteers who provide training, socialization, and enrichment activities for the dogs. We tailor our approach to meet each dog's individual needs and help them become well-adjusted and adoptable companions.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+        <div>
+            <h3>How often do the dogs receive veterinary care?</h3>
+            <p>
+                Our dogs receive regular veterinary care, including wellness exams, vaccinations, and treatment for any medical issues. We work closely with trusted veterinarians to ensure our dogs are healthy and happy during their stay at our rescue center.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+        <div>
+            <h3>Are visitors allowed to interact with the dogs at your rescue center?</h3>
+            <p>
+                Yes, visitors are welcome to interact with the dogs under the supervision of our staff and volunteers. We believe socialization and human interaction are important for the well-being of our dogs and encourage positive interactions between visitors and our canine residents.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+        <div>
+            <h3>Are your facilities accessible to individuals with disabilities?</h3>
+            <p>
+                Yes, we strive to make our facilities accessible to all individuals, including those with disabilities. If you have specific accessibility needs or require assistance during your visit, please let us know, and we'll do our best to accommodate you.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+    </div>
+
+    <div>
+        <h2>Volunteering</h2>
+
+        <div>
+            <h3>How can I become a volunteer at your rescue center?</h3>
+            <p>
+                Becoming a volunteer at our rescue center is easy! Simply fill out a volunteer application form on our website or contact us directly to express your interest. We'll provide you with information about our volunteer opportunities, training, and orientation sessions.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+        <div>
+            <h3>What types of volunteer opportunities are available?</h3>
+            <p>
+                We offer a variety of volunteer opportunities, including dog walking, socialization, grooming, administrative tasks, event coordination, and fundraising. Whether you're a dog lover, a skilled organizer, or a social media enthusiast, there's a volunteer role for you at our rescue center.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+        <div>
+            <h3>Do I need any previous experience to volunteer?</h3>
+            <p>
+                No previous experience is required to volunteer at our rescue center. We provide training, guidance, and ongoing support to all our volunteers to ensure they feel confident and comfortable in their roles.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+        <div>
+            <h3>Can I volunteer if I'm under 18 years old?</h3>
+            <p>
+                Yes, we welcome volunteers of all ages; however, volunteers under 18 years old must have parental consent and be accompanied by a parent or guardian while volunteering at our rescue center.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+        <div>
+            <h3>What is the time commitment required for volunteering?</h3>
+            <p>
+                The time commitment required for volunteering varies depending on the volunteer role and your availability. Whether you can volunteer once a week, once a month, or on an occasional basis, your contributions make a difference in the lives of our dogs.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+    </div>
+
+    <div>
+        <h2>Donations and Support</h2>
+
+        <div>
+            <h3>How can I make a donation to support your rescue center?</h3>
+            <p>
+                Making a donation to support our rescue center is easy! You can donate online through our website, mail a check to our mailing address, or participate in fundraising events and campaigns organized by our organization.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+        <div>
+            <h3>What will my donation be used for?</h3>
+            <p>
+                Your donation will be used to provide essential care, medical treatment, food, shelter, and enrichment activities for the dogs in our rescue center. Your support helps us save lives and give dogs a second chance at finding loving forever homes.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+        <div>
+            <h3>Are donations tax-deductible?</h3>
+            <p>
+                Yes, we are a registered non-profit organization, and donations made to our rescue center are tax-deductible to the extent allowed by law. We provide donation receipts for all contributions received.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+        <div>
+            <h3>Can I donate supplies or other items to your rescue center?</h3>
+            <p>
+                Yes, we accept donations of supplies such as dog food, toys, bedding, grooming supplies, and cleaning supplies. You can drop off donations at our rescue center during business hours or contact us to arrange a donation pickup.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+        <div>
+            <h3>How else can I support your rescue center apart from donations?</h3>
+            <p>
+                Apart from donations, you can support our rescue center by volunteering your time, spreading awareness about our mission and programs, participating in adoption events, and advocating for responsible pet ownership in your community. Every action, big or small, makes a difference in the lives of our dogs.
+            </p>
+            <img src="images/pawDown.PNG" height="50" width="50"/>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
