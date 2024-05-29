@@ -43,6 +43,18 @@
     margin-left: 10px; /* Adds some space between the image and the text */
 }
 
+.article-content p {
+    color: black; /* Set the text's color to black */
+}
+
+#articles a {
+    text-decoration: none; /* Remove the underline from the link */
+}
+
+#articles a h4 {
+    text-decoration: underline; /* Apply underline to the title */
+}
+
 /**
 =================================
  media query for a smaller screen
@@ -65,7 +77,7 @@
     }
 
     .accordion-item:nth-of-type(3) .accordion-icon {
-        height: 55%; /* for the third accordion since the image stretches as there are 2 rows */
+        height: 70%; /* for the third accordion since the image stretches as there are 2 rows */
     }
 
     .accordion-icon {
@@ -75,6 +87,17 @@
 
     /* suggested articles */
     .row .col:last-child {
-        margin: 1%;
+        margin: 8% 10% 0 0;
     }
+
+    .image-text-container { /* Put the title below the image and the paragraph below the title */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row .col {
+        margin: 8% 10% 0 0;
+    }
+
+
 }
