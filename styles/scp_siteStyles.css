@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+
+
+
+/** Site Styling **/
+
+.btn{
+    border-color: #332701;
+}
+
+.btn-primary{
+    font-weight: bold;
+}
+
+.btn-donate{
+    background-color: #16731b;
+}
+
+.btn-donate:hover{
+    background-color: #125e16;
+}
+
+.btn-adopt{
+    background-color: #0093FF;
+}
+.btn-adopt:hover{
+    background-color: #0177cd;
+}
+
+.btn-volunteer{
+    background-color: #cd1b1b;
+}
+
+.btn-volunteer:hover{
+    background-color: #a31717;
+}
+
+.text-volunteer{
+    color: #cd1b1b;
+}
+
+a{
+    text-decoration: none;
+    color: #0056b3;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.bg-bodyColour{
+    background-color: #9dd6ef;
+}
+
+@media (max-width: 767px) {
+    p {
+        font-size: 18px;
+    }
+}
+
+
+
+
