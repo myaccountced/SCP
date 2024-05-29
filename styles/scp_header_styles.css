@@ -1,0 +1,49 @@
+/**
+=================================
+ header styles
+=================================
+**/
+.nav-item {
+    display: flex; /* Make the menu items flex containers */
+    align-items: center; /* Align items vertically */
+    border-left: 1px solid #94501a; /* Add divider between menu items */
+    padding: 0 1dvw 0 1dvw; /* Add padding to each menu item */
+}
+
+.navbar {
+    background-color: #009E0F;
+}
+
+.navbar .container {
+    margin: 0 0 0 20%; /* move the logo to he left */
+}
+
+.header-container .d-flex img {
+    width: 150px; /* adjust logo width */
+}
+
+/**
+=================================
+ media query for a smaller screen
+=================================
+**/
+@media only screen and (max-width: 991px) {
+    /**
+    =================================
+     header styles
+    =================================
+    **/
+    .navbar .container {
+        /* make the container take up the whole page width */
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        background-color: #ffffff; /* Make the background for the logo white */
+    }
+
+    #menubar {
+        background-color: #009E0F; /* Keep the green background for the navbar */
+    }
+}

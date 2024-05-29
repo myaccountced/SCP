@@ -6,8 +6,9 @@
     <title>SCP Advice</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/scp_advice_styles.css">
     <script src="scripts/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/scp_header_styles.css">
+    <link rel="stylesheet" href="styles/scp_advice_styles.css">
 </head>
 
 <body>
@@ -60,7 +61,7 @@
 
     <!--body-->
     <div class="container d-flex flex-column justify-content-center align-items-center">
-        <h1>Life with a Pet</h1>
+        <h1 class="mt-4">Life with a Pet</h1>
         <p class="ms-xxl-5 me-xxl-5">At our sanctuary, we believe that every pet deserves a loving home, and every home deserves the love of a furry
             friend. Whether you're a seasoned pet parent or embarking on the journey for the first time, the bond between
         human and dog transcends words. Join us in celebrating the magic of rescue, where each adoption not only changes
@@ -76,15 +77,14 @@
 
 <!--accordion stuff-->
 <div class="container">
-    <h1>Supplies Checklist</h1>
-
-    <img src="images/pawDown.PNG" height="50" width="50"/>
+    <h1 class="text-center mt-4">Supplies Checklist</h1>
 
     <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <button class="accordion-button collapsed text-nowrap" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                         Dog Necessities for the Car Ride Home
+                        <img src="images/pawDown.PNG" height="40" width="40" class="accordion-icon" />
                     </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -107,6 +107,7 @@
                 <h2 class="accordion-header" id="flush-headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                         Dog Necessities for Feeding
+                        <img src="images/pawDown.PNG" height="40" width="40" class="accordion-icon" />
                     </button>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
@@ -127,6 +128,7 @@
                 <h2 class="accordion-header" id="flush-headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                         Dog Necessities for Playtime and Entertainment
+                        <img src="images/pawDown.PNG" height="40" width="40" class="accordion-icon" />
                     </button>
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
@@ -148,6 +150,7 @@
                 <h2 class="accordion-header" id="flush-headingFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                         Dog Necessities for Your Daily Walks
+                        <img src="images/pawDown.PNG" height="40" width="40" class="accordion-icon" />
                     </button>
                 </h2>
                 <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
@@ -169,6 +172,7 @@
                 <h2 class="accordion-header" id="flush-headingFive">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                         Dog Necessities for Grooming
+                        <img src="images/pawDown.PNG" height="40" width="40" class="accordion-icon" />
                     </button>
                 </h2>
                 <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
@@ -190,50 +194,68 @@
     </div>
 
 
-    <div class="container" id="articles">
-        <h1>Suggested Articles</h1>
+    <h1 class="text-center">Suggested Articles</h1>
+    <div class="row" id="articles">
 
-        <a class="container" href="https://www.akc.org/expert-advice/health/why-do-dogs-run-away/">
-            <img src="images/dogArtic1.png" height="178" width="267"/>
-            <p>Why Do Dogs Run Away?</p>
-            <p>Safety</p>
-        </a>
+        <div class="col col-md-5 p-3 article">
+            <a href="https://www.akc.org/expert-advice/health/why-do-dogs-run-away/">
+                <div class="image-text-container">
+                    <img src="images/dogArtic1.png" height="178" width="267" alt="Dog Article Image" />
+                    <div class="article-content fw-medium">
+                        <h4>Why Do Dogs Run Away?</h4>
+                        <p>You open your front door to pick up a package, then your dog bolts out and is gone. Or you’re taking a peaceful walk with your dog, and suddenly they’re chasing a rabbit, out of sight. One of a dog owner’s worst nightmares is having their dog run away.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
 
-        <a class="container" href="https://www.akc.org/expert-advice/health/dry-your-dog/">
-            <img src="images/dogArtic2.png" height="178" width="267"/>
-            <p>How to Dry Your Dog Completely </p>
-            <p>Health</p>
-        </a>
+        <div class="col col-md-5">
+            <a href="https://www.akc.org/expert-advice/health/dry-your-dog/">
+                <img src="images/dogArtic2.png" height="178" width="267"/>
+                <p>How to Dry Your Dog Completely </p>
+                <p>When your dog is wet — whether it’s from a bath, swimming, or a walk in damp weather — it’s important to dry them thoroughly. Drying your dog helps keep them warm, prevents mats, tangles, and bacteria growth, and helps eliminate the “wet dog” smell.</p>
+            </a>
+        </div>
 
-        <a class="container" href="https://www.akc.org/expert-advice/health/dog-noise-sensitive/">
-            <img src="images/dogArtic3.png" height="178" width="267"/>
-            <p>Is Your Dog Noise Sensitive? Sources of Anxiety You May Not Even Notice</p>
-            <p>Health</p>
-        </a>
+        <div class="col col-md-5">
+            <a href="https://www.akc.org/expert-advice/health/dog-noise-sensitive/">
+                <img src="images/dogArtic3.png" height="178" width="267"/>
+                <p>Is Your Dog Noise Sensitive? Sources of Anxiety You May Not Even Notice</p>
+                <p>A study of 13,700 pet dogs showed that noise sensitivity was the most common trait to cause anxiety in dogs, showing up in almost one-third of the dogs.</p>
+            </a>
+        </div>
 
-        <a class="container" href="https://www.akc.org/expert-advice/health/dog-clothes-weather-safety/">
-            <img src="images/dogArtic4.png" height="178" width="267"/>
-            <p>How to Get Your Dog Comfortable Wearing Clothes for Hot and Cold Weather</p>
-            <p>Safety</p>
-        </a>
+        <div class="col col-md-5">
+            <a href="https://www.akc.org/expert-advice/health/dog-clothes-weather-safety/">
+                <img src="images/dogArtic4.png" height="178" width="267"/>
+                <p>How to Get Your Dog Comfortable Wearing Clothes for Hot and Cold Weather</p>
+                <p>There are clothes for dogs of all sizes and a variety of reasons you might want to dress your dog. Sweaters, shirts, and coats are especially useful for keeping hairless and short-coated dogs warm and comfortable during cold weather.</p>
+            </a>
+        </div>
 
-        <a class="container" href="https://www.akc.org/expert-advice/health/health-benefits-of-dog-ownership/">
-            <img src="images/dogArtic5.png" height="178" width="267"/>
-            <p>The Health Benefits of Being a Dog Owner</p>
-            <p>Health</p>
-        </a>
+        <div class="col col-md-5">
+            <a href="https://www.akc.org/expert-advice/health/health-benefits-of-dog-ownership/">
+                <img src="images/dogArtic5.png" height="178" width="267"/>
+                <p>The Health Benefits of Being a Dog Owner</p>
+                <p>From reducing stress levels to helping improve physical fitness, owning a dog can actually be a game-changer for your overall well-being. Aside from the fact that they’re devoted to us, here are some of the health benefits of having a dog.</p>
+            </a>
+        </div>
 
-        <a class="container" href="https://www.phillyvoice.com/dog-behavior-what-do-these-actions-mean-doggie-designer-0599973/">
-            <img src="images/dogArtic6.png" height="178" width="267"/>
-            <p>Dog Behavior: What Do These 9 Actions Mean?</p>
-            <p>Health</p>
-        </a>
+        <div class="col col-md-5">
+            <a href="https://www.phillyvoice.com/dog-behavior-what-do-these-actions-mean-doggie-designer-0599973/">
+                <img src="images/dogArtic6.png" height="178" width="267"/>
+                <p>Dog Behavior: What Do These 9 Actions Mean?</p>
+                <p>Dogs may not be able to talk, but they have a variety of ways in which they can and do communicate with us. Some of these communicative techniques are intentional.</p>
+            </a>
+        </div>
 
-        <a class="container" href="https://www.rd.com/list/foods-dogs-cant-eat/">
-            <img src="images/dogArtic7.png" height="178" width="267"/>
-            <p>18 Human Foods Dogs Can’t Eat, According to Vets</p>
-            <p>Health</p>
-        </a>
+        <div class="col col-md-5">
+            <a href="https://www.rd.com/list/foods-dogs-cant-eat/">
+                <img src="images/dogArtic7.png" height="178" width="267"/>
+                <p>18 Human Foods Dogs Can’t Eat, According to Vets</p>
+                <p>What's good (or what tastes good) for us isn't necessarily great for our fur babies. Vets tell us about the foods dogs can't eat—and why.</p>
+            </a>
+        </div>
     </div>
 </body>
 

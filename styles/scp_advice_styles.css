@@ -1,37 +1,47 @@
 /**
 =================================
- header styles
-=================================
-**/
-.nav-item {
-    display: flex; /* Make the menu items flex containers */
-    align-items: center; /* Align items vertically */
-    border-left: 1px solid #94501a; /* Add divider between menu items */
-    padding: 0 1dvw 0 1dvw; /* Add padding to each menu item */
-}
-
-.navbar {
-    background-color: #009E0F;
-}
-
-.navbar .container {
-    margin: 0 0 0 20%; /* move the logo to he left */
-}
-
-.header-container .d-flex img {
-    width: 150px; /* adjust logo width */
-}
-
-/**
-=================================
  body styles
 =================================
 **/
-#articles a {
-    border: 1px solid black;
+
+/* Style the custom button icon */
+.accordion-button::after {
+    display: none;
 }
 
+.accordion-button {
+    font-size: 80%;
+}
 
+.accordion-icon {
+    position: absolute;
+    right: 0;
+    top: 45%;
+    transform: translateY(-50%); /* Fine-tune vertical centering */
+}
+
+/* suggested articles styles */
+.row {
+    margin: 0 0 0 10%;
+}
+
+.row .col {
+    border: 1px solid black;
+    margin: 1%;
+}
+
+.row .col:last-child {
+    margin: 1% 0 0 23%;
+}
+
+.image-text-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the middle */
+}
+
+.article-content {
+    margin-left: 10px; /* Adds some space between the image and the text */
+}
 
 /**
 =================================
@@ -41,30 +51,30 @@
 @media only screen and (max-width: 991px) {
     /**
     =================================
-     header styles
-    =================================
-    **/
-    .navbar .container {
-        /* make the container take up the whole page width */
-        margin: 0;
-        padding: 0;
-    }
-
-    .navbar {
-        background-color: #ffffff; /* Make the background for the logo white */
-    }
-
-    #menubar {
-        background-color: #009E0F; /* Keep the green background for the navbar */
-    }
-
-    /**
-    =================================
      body styles
     =================================
     **/
     #video {
         width: 90%;
         height: 300px;
+    }
+
+    /* accordion styles */
+    .accordion-button {
+        font-size: 60%;
+    }
+
+    .accordion-item:nth-of-type(3) .accordion-icon {
+        height: 55%; /* for the third accordion since the image stretches as there are 2 rows */
+    }
+
+    .accordion-icon {
+        height: 70%;
+        width: 10%;
+    }
+
+    /* suggested articles */
+    .row .col:last-child {
+        margin: 1%;
     }
 }
