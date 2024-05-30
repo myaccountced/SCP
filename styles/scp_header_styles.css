@@ -107,8 +107,8 @@
         margin-left: 10px;
     }
 
-    /* Add padding to the top of the body to prevent content from being hidden under the navbar */
-    body {
-        padding-top: 190px; /* Adjust this value based on the height of your navbar */
-    }
+    /*!* Add padding to the top of the body to prevent content from being hidden under the navbar *!*/
+    /*body {*/
+    /*    padding-top: 190px; !* Adjust this value based on the height of your navbar *!*/
+    /*}*/
 }
