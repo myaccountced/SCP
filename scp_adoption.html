@@ -1,293 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCP Adoption</title>
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/scp_siteStyles.css">
-    <link rel="stylesheet" href="styles/scp_footerStyles.css">
-    <link rel="stylesheet" href="styles/scp_adoptionStyles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="scripts/bootstrap.min.js"></script>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SCP Adoption</title>
+   <link rel="stylesheet" href="styles/bootstrap.min.css">
+   <link rel="stylesheet" href="styles/scp_siteStyles.css">
+   <link rel="stylesheet" href="styles/scp_header_styles.css">
+   <link rel="stylesheet" href="styles/scp_footerStyles.css">
+   <link rel="stylesheet" href="styles/scp_adoptionStyles.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <script src="scripts/bootstrap.min.js"></script>
 </head>
 <body class="bg-bodyColour">
-<nav>
+<div class="header-container">
+   <div class="nav-container">
+      <nav class="navbar navbar-expand-lg navbar-light">
 
-</nav>
+         <div class="container bg-light col-lg-auto">
+            <div class="d-flex justify-content-between align-items-center">
+               <img src="images/logo.png"/>
+               <div class="d-flex flex-column align-items-center">
+                  <p class="m-0 h3">Second Chance</p>
+                  <p class="m-0 h3">Pups</p>
+                  <p class="m-0 h4">Rescue and</p>
+                  <p class="m-0 h4">Rehabilitation</p>
+               </div>
+            </div>
+         </div>
 
+         <div class="container" id="menubar">
+            <p></p> <!-- This element keeps the menu icon to the right -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+         </div>
 
-<div class="w-75 mx-auto mb-3 mt-3">
-    <div class="container">
-        <div class="row">
-            <h1 class="text-center">Pups Available for Adoption</h1>
-            <div class="col-4 bg-panel">
-                <h2>Adoption Fees</h2>
-                <ul>
-                    <li>Puppies: $450*</li>
-                    <li>Adults: $250</li>
-                    <li>Seniors: $200</li>
-                </ul>
-            </div>
-            <div class="col-4 bg-panel">
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav text-nowrap">
+               <li class="nav-item">
+                  <span class="bi bi-house-door-fill"></span>
+                  <a class="nav-link" href="scp_home.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <img src="images/paw.png" height="25" width="25"/>
+                  <a class="nav-link" href="scp_adoption.html">Adopt</a>
+               </li>
+               <li class="nav-item active">
+                  <span class="bi bi-info-circle-fill"></span>
+                  <a class="nav-link" href="scp_advice.html">Dog Advice</a>
+               </li>
+               <li class="nav-item">
+                  <span class="bi bi-telephone-fill"></span>
+                  <a class="nav-link" href="scp_contact.html">Contact/Find Us</a>
+               </li>
+            </ul>
+         </div>
 
-            </div>
-        </div>
-        <div class="row mt-2 mb-2">
-        <div class="dog bg-panel col-3">
-            <img class="dog-top mx-auto d-block img-fluid" src="images/dogs/bella.jpg" alt="" width="300">
-            <div class="dog-bottom d-flex flex-column p-4">
-                <span>Name: Bella</span>
-                <span>Age: 3 years old</span>
-                <span>Breed: Labrador Retriever</span>
-                <span>Sex: Female</span>
-                <span>Size: Large</span>
-                <span>Health:</span>
-                <ul>
-                    <li>Spayed/Neutered</li>
-                    <li>Vaccinations up to date</li>
-                </ul>
-            </div>
-        </div>
-        <div class="dog bg-panel col-3">
-            <img class="dog-top mx-auto d-block img-fluid" src="images/dogs/max.jpg" alt="" width="300">
-            <div class="dog-bottom d-flex flex-column p-4">
-                <span>Name: Max</span>
-                <span>Age: 2 years old</span>
-                <span>Breed: German Shepard Mix</span>
-                <span>Sex: Male</span>
-                <span>Size: Large</span>
-                <span>Health:</span>
-                <ul>
-                    <li>Spayed/Neutered</li>
-                    <li>Vaccinations up to date</li>
-                </ul>
-            </div>
-        </div>
-        <div class="dog bg-panel col-3">
-            <img class="dog-top mx-auto d-block img-fluid" src="images/dogs/charlie.jpg" alt="" width="300">
-            <div class="d-flex flex-column p-4">
-                <span>Name: Charlie</span>
-                <span>Age: 5 years old</span>
-                <span>Breed: Beagle</span>
-                <span>Sex: Male</span>
-                <span>Size: Medium</span>
-                <span>Health:</span>
-                <ul>
-                    <li>Spayed/Neutered</li>
-                    <li>Vaccinations up to date</li>
-                </ul>
-            </div>
-        </div>
-        <div class="dog bg-panel col-3">
-            <img class="dog-top mx-auto d-block img-fluid" src="images/dogs/bailey.jpg" alt="" width="300">
-            <div class="d-flex flex-column p-4">
-                <span>Name: Bailey</span>
-                <span>Age: 8 years old</span>
-                <span>Breed: Yorkshire Terrier</span>
-                <span>Sex: Female</span>
-                <span>Size: Small</span>
-                <span>Health:</span>
-                <ul>
-                    <li>Spayed/Neutered</li>
-                    <li>Vaccinations up to date</li>
-                </ul>
-            </div>
-        </div>
-        </div>
-        <div class="row mt-2 mb-2">
-            <div class="dog bg-panel col-3">
-                <img class="dog-top mx-auto d-block img-fluid" src="images/dogs/daisy.jpg" alt="" width="300">
-                <div class="d-flex flex-column p-4">
-                    <span>Name: Daisy</span>
-                    <span>Age: 4 years old</span>
-                    <span>Breed: Bulldog</span>
-                    <span>Sex: Female</span>
-                    <span>Size: medium</span>
-                    <span>Health:</span>
-                    <ul>
-                        <li>Spayed/Neutered</li>
-                        <li>Vaccinations up to date</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dog bg-panel col-3">
-                <img class="dog-top mx-auto d-block img-fluid" src="images/dogs/rocky.jpg" alt="" width="300">
-                <div class="d-flex flex-column p-4">
-                    <span>Name: Rocky</span>
-                    <span>Age: 1 years old</span>
-                    <span>Breed: Siberian Husky</span>
-                    <span>Sex: Male</span>
-                    <span>Size: Large</span>
-                    <span>Health:</span>
-                    <ul>
-                        <li>Spayed/Neutered</li>
-                        <li>Vaccinations up to date</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dog bg-panel col-3">
-                <img class="dog-top mx-auto d-block img-fluid" src="images/dogs/lucy.jpg" alt="" width="300">
-                <div class="d-flex flex-column p-4">
-                    <span>Name: Lucy</span>
-                    <span>Age: 6 years old</span>
-                    <span>Breed: Poodle</span>
-                    <span>Sex: Male</span>
-                    <span>Size: Small</span>
-                    <span>Health:</span>
-                    <ul>
-                        <li>Spayed/Neutered</li>
-                        <li>Vaccinations up to date</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dog bg-panel col-3">
-                <img class="dog-top mx-auto d-block img-fluid" src="images/dogs/cooper.jpg" alt="" width="300">
-                <div class="d-flex flex-column p-4">
-                    <span>Name: Cooper</span>
-                    <span>Age: 3 years old</span>
-                    <span>Breed: Boxer</span>
-                    <span>Sex: Male</span>
-                    <span>Size: Large</span>
-                    <span>Health:</span>
-                    <ul>
-                        <li>Spayed/Neutered</li>
-                        <li>Vaccinations up to date</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-2 mb-2">
-            <div class="dog bg-panel col-4">
-                <img class="dog-top mx-auto d-block img-fluid" src="images/dogs/buddy.jpg" alt="" width="300">
-                <div class="d-flex flex-column p-4">
-                    <span>Name: Buddy</span>
-                    <span>Age: 4 years old</span>
-                    <span>Breed: Golden Retriever</span>
-                    <span>Sex: Female</span>
-                    <span>Size: Large</span>
-                    <span>Health:</span>
-                    <ul>
-                        <li>Spayed/Neutered</li>
-                        <li>Vaccinations up to date</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dog bg-panel col-4">
-                <img class="dog-top mx-auto d-block img-fluid" src="images/dogs/zoe.jpg" alt="" width="300">
-                <div class="d-flex flex-column p-4">
-                    <span>Name: Zoe</span>
-                    <span>Age: 5 years old</span>
-                    <span>Breed: Shih Tzu</span>
-                    <span>Sex: Female</span>
-                    <span>Size: Small</span>
-                    <span>Health:</span>
-                    <ul>
-                        <li>Spayed/Neutered</li>
-                        <li>Vaccinations up to date</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dog bg-panel col-4">
-                <img class="dog-top mx-auto d-block img-fluid" src="images/dogs/duke.jpg" alt="" width="300">
-                <div class="d-flex flex-column p-4">
-                    <span>Name: Duke</span>
-                    <span>Age: 6 years old</span>
-                    <span>Breed: Poodle</span>
-                    <span>Sex: Male</span>
-                    <span>Size: Extra-Large</span>
-                    <span>Health:</span>
-                    <ul>
-                        <li>Spayed/Neutered</li>
-                        <li>Vaccinations up to date</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dog bg-panel col-4">
-                <img class="dog-top mx-auto d-block img-fluid" src="images/dogs/sophie.jpg" alt="" width="300">
-                <div class="d-flex flex-column p-4">
-                    <span>Name: Sophie</span>
-                    <span>Age: 3 years old</span>
-                    <span>Breed: Border Collie</span>
-                    <span>Sex: Male</span>
-                    <span>Size: Large</span>
-                    <span>Health:</span>
-                    <ul>
-                        <li>Spayed/Neutered</li>
-                        <li>Vaccinations up to date</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+      </nav>
+   </div>
 </div>
 
 
+<div class="w-80 mx-auto mb-3 mt-3">
+   <div class="container">
 
-<footer class="bg-footerColour border border-black rounded-top-5 pt-1 pb-0">
-    <div class="container">
-        <div class="row">
-            <!-- About Section appears at tops of footer on mobile, uses middle column on full browser view -->
-            <div class="col-12 col-md-4 order-1 order-md-2">
-                <div id="footerAbout" class="mb-4 p-2">
-                    <h2 class="text-center d-none d-md-block">About</h2>
-                    <p>Second Chance Pups is a compassionate non-profit organization dedicated to rescuing, rehabilitating,
-                        and rehoming dogs in need. Since 2010, we have committed to giving each dog a new lease on life,
-                        pairing them with loving homes that match their needs. Support our mission by adopting a furry friend,
-                        making a donation, or volunteering your time. Together, we can provide countless second chances to
-                        pups in need!</p>
-                </div>
+      <div class="row d-flex flex-row">
+
+         <h1 class="text-center">Pups Available for Adoption</h1>
+
+            <div class="col-6 bg-panel">
+
+               <h2 class="text-center">Adoption Fees</h2>
+               <div class="row">
+                  <div class="col-6">
+                     <ul>
+                        <li>Puppies: $450*</li>
+                        <li>Adults: $250</li>
+                        <li>Seniors**: $200</li>
+                     </ul>
+                  </div>
+                  <div class="col-6">
+                     <p>* $250 + $200 refundable deposit, refunded upon proof of spay/neuter.</p>
+                     <p>** Seniors are considered 8 years or older</p>
+                  </div>
+
+               </div>
+
+
             </div>
 
-            <!-- Org and Contact Info appears on desktop as the left column, appears as a column underneath the about section on mobile -->
-            <div class="col-6 col-md-4 order-2 order-md-1">
-                <div id="footerOrg" class="mb-4 d-flex align-items-center p-2">
-                    <img src="images/SecondChancePupsLogoTransparent.png" alt="Second Chance Pups Logo" height="120px" width="120px">
-                    <div class="">
-                        <h2 id="scpNameFooter" class="d-flex flex-column d-md-inline-block align-items-md-start text-md-center"><span>Second</span> <span>Chance</span> <span>Pups</span></h2>
-                        <h4 class="d-none d-md-block text-center">Rescue and Rehabilitation</h4>
-                    </div>
-                </div>
-                <div id="footerContact" class="p-2 pt-0 pb-0">
-                    <h3 class="text-center d-none d-md-block">Contact</h3>
-                    <div class="contactInfo p-1 pt-0 pb-0">
-                        <div>
-                            <span class="contactLabel">Phone: </span><span class="contactContent"><a href="tel:+2061234567">(306) 123-4567</a></span>
-                        </div>
-                        <div>
-                            <span class="contactLabel">Email: </span><span class="contactContent"><a href="mailto:info@secondchancepups.ca">info@secondchancepups.ca</a></span>
-                        </div>
-                    </div>
-                </div>
+         <div class="col-6 bg-panel d-flex flex-column align-items-center">
+
+            <h2 class="text-center">Love at first sight?</h2>
+            <div class="justify-content-center">
+               <a href="scp_contact.html" class="btn btn-primary btn-adopt m-1">Contact us to adopt now!</a>
             </div>
 
-            <!-- Socials, Donate, and Charity Info appears as the third column on desktop, appears as second column underneath about on mobile-->
-            <div class="col-6 col-md-4 order-3">
-                <div id="footerSocials" class="mb-4 p-2">
-                    <h2 class="text-center d-none d-md-block">Socials</h2>
-                    <div class="d-flex justify-content-between">
-                        <a href="https://www.facebook.com" class="text-black mr-3"><i class="bi bi-facebook" style="font-size: 3rem;"></i></a>
-                        <a href="https://www.twitter.com" class="text-black mr-3"><i class="bi bi-twitter" style="font-size: 3rem;"></i></a>
-                        <a href="https://www.instagram.com" class="text-black mr-3"><i class="bi bi-instagram" style="font-size: 3rem;"></i></a>
-                        <a href="https://www.youtube.com" class="text-black"><i class="bi bi-youtube" style="font-size: 3rem;"></i></a>
-                    </div>
-                </div>
-                <div id="footerDonate" class="p-2">
-                    <a id="donateBtn" href="#" class="btn btn-primary btn-lg btn-block w-100 btn-donate">DONATE NOW</a>
-                </div>
-                <div id="footerCharity" class="p-3">
-                    <p class="text-center">Non-Profit Organization<br/> EIN: 12-3456789</p>
-                </div>
-            </div>
-        </div>
+         </div>
+      </div>
 
-        <!-- Copyright Notice centered at the bottom of the page-->
-        <div class="row">
-            <div class="col-12 order-4 p-2 pt-0 pb-0 text-center">
-                <p class="text-italic">© 2024 Second Chance Pups. All rights reserved.</p>
+      <div class="row mt-2 mb-2">
+
+         <div class="bg-panel col-4">
+
+            <img class="mx-auto d-block img-fluid w-100 p-3" src="images/dogs/bailey.jpg" alt="photo of bailey">
+            <div class="d-flex flex-column p-4">
+               <span>Name: Bailey</span>
+               <span>Age: 8 years old</span>
+               <span>Breed: Yorkshire Terrier</span>
+               <span>Sex: Female</span>
+               <span>Size: Small</span>
+               <span>Health:</span>
+               <ul>
+                  <li>Spayed/Neutered</li>
+                  <li>Vaccinations up to date</li>
+               </ul>
             </div>
-        </div>
-    </div>
+
+         </div>
+
+         <div class="bg-panel col-4">
+
+            <img class="mx-auto d-block img-fluid w-100 p-3" src="images/dogs/cooper.jpg" alt="photo of cooper">
+            <div class="d-flex flex-column p-4">
+               <span>Name: Cooper</span>
+               <span>Age: 3 years old</span>
+               <span>Breed: Boxer</span>
+               <span>Sex: Male</span>
+               <span>Size: Large</span>
+               <span>Health:</span>
+               <ul>
+                  <li>Spayed/Neutered</li>
+                  <li>Vaccinations up to date</li>
+               </ul>
+            </div>
+
+         </div>
+
+         <div class="bg-panel col-4">
+
+            <img class="mx-auto d-block img-fluid w-100 p-3" src="images/dogs/sophie.jpg" alt="photo of sophie">
+            <div class="d-flex flex-column p-4">
+               <span>Name: Sophie</span>
+               <span>Age: 3 years old</span>
+               <span>Breed: Border Collie</span>
+               <span>Sex: Male</span>
+               <span>Size: Large</span>
+               <span>Health:</span>
+               <ul>
+                  <li>Spayed/Neutered</li>
+                  <li>Vaccinations up to date</li>
+               </ul>
+            </div>
+
+         </div>
+
+      </div>
+
+      <div class="row mt-2 mb-2">
+
+         <div class="bg-panel col-4">
+
+            <img class="mx-auto d-block img-fluid p-3 w-100" src="images/dogs/bella.jpg" alt="photo of bella">
+            <div class="d-flex flex-column p-4">
+               <span>Name: Bella</span>
+               <span>Age: 3 years old</span>
+               <span>Breed: Labrador Retriever</span>
+               <span>Sex: Female</span>
+               <span>Size: Large</span>
+               <span>Health:</span>
+               <ul>
+                  <li>Spayed/Neutered</li>
+                  <li>Vaccinations up to date</li>
+               </ul>
+            </div>
+
+         </div>
+
+         <div class="bg-panel col-4">
+
+            <img class="mx-auto d-block img-fluid p-3 w-100" src="images/dogs/max.jpg" alt="photo of max">
+            <div class="d-flex flex-column p-4">
+               <span>Name: Max</span>
+               <span>Age: 2 years old</span>
+               <span>Breed: German Shepard Mix</span>
+               <span>Sex: Male</span>
+               <span>Size: Large</span>
+               <span>Health:</span>
+               <ul>
+                  <li>Spayed/Neutered</li>
+                  <li>Vaccinations up to date</li>
+               </ul>
+            </div>
+
+         </div>
+
+         <div class="bg-panel col-4">
+
+            <img class="mx-auto d-block img-fluid p-3 w-100" src="images/dogs/charlie.jpg" alt="photo of charlie">
+            <div class="d-flex flex-column p-4">
+               <span>Name: Charlie</span>
+               <span>Age: 5 years old</span>
+               <span>Breed: Beagle</span>
+               <span>Sex: Male</span>
+               <span>Size: Medium</span>
+               <span>Health:</span>
+               <ul>
+                  <li>Spayed/Neutered</li>
+                  <li>Vaccinations up to date</li>
+               </ul>
+            </div>
+
+         </div>
+
+      </div>
+
+      <div class="row mt-2 mb-2">
+
+         <div class="bg-panel col-4">
+
+            <img class="mx-auto d-block img-fluid p-3 w-100" src="images/dogs/daisy.jpg" alt="photo of daisy">
+            <div class="d-flex flex-column p-4">
+               <span>Name: Daisy</span>
+               <span>Age: 4 years old</span>
+               <span>Breed: Bulldog</span>
+               <span>Sex: Female</span>
+               <span>Size: medium</span>
+               <span>Health:</span>
+               <ul>
+                  <li>Spayed/Neutered</li>
+                  <li>Vaccinations up to date</li>
+               </ul>
+            </div>
+
+         </div>
+
+         <div class="bg-panel col-4">
+
+            <img class="mx-auto d-block img-fluid p-3 w-100" src="images/dogs/rocky.jpg" alt="photo of rocky">
+            <div class="d-flex flex-column p-4">
+               <span>Name: Rocky</span>
+               <span>Age: 1 years old</span>
+               <span>Breed: Siberian Husky</span>
+               <span>Sex: Male</span>
+               <span>Size: Large</span>
+               <span>Health:</span>
+               <ul>
+                  <li>Spayed/Neutered</li>
+                  <li>Vaccinations up to date</li>
+               </ul>
+            </div>
+
+         </div>
+
+         <div class="bg-panel col-4">
+
+            <img class="mx-auto d-block img-fluid p-3 w-100" src="images/dogs/lucy.jpg" alt="photo of lucy">
+            <div class="d-flex flex-column p-4">
+               <span>Name: Lucy</span>
+               <span>Age: 6 years old</span>
+               <span>Breed: Poodle</span>
+               <span>Sex: Male</span>
+               <span>Size: Small</span>
+               <span>Health:</span>
+               <ul>
+                  <li>Spayed/Neutered</li>
+                  <li>Vaccinations up to date</li>
+               </ul>
+            </div>
+
+         </div>
+
+      </div>
+
+      <div class="row mt-2 mb-2">
+
+         <div class="bg-panel col-4">
+
+            <img class="mx-auto d-block img-fluid p-3 w-100" src="images/dogs/buddy.jpg" alt="photo of buddy">
+            <div class="d-flex flex-column p-4">
+               <span>Name: Buddy</span>
+               <span>Age: 4 years old</span>
+               <span>Breed: Golden Retriever</span>
+               <span>Sex: Female</span>
+               <span>Size: Large</span>
+               <span>Health:</span>
+               <ul>
+                  <li>Spayed/Neutered</li>
+                  <li>Vaccinations up to date</li>
+               </ul>
+            </div>
+
+         </div>
+
+         <div class="bg-panel col-4">
+
+            <img class="mx-auto d-block img-fluid p-3 w-100" src="images/dogs/zoe.jpg" alt="photo of zoe">
+            <div class="d-flex flex-column p-4">
+               <span>Name: Zoe</span>
+               <span>Age: 5 years old</span>
+               <span>Breed: Shih Tzu</span>
+               <span>Sex: Female</span>
+               <span>Size: Small</span>
+               <span>Health:</span>
+               <ul>
+                  <li>Spayed/Neutered</li>
+                  <li>Vaccinations up to date</li>
+               </ul>
+            </div>
+
+         </div>
+
+         <div class="bg-panel col-4">
+
+            <img class="mx-auto d-block img-fluid p-3 w-100" src="images/dogs/duke.jpg" alt="photo of duke">
+            <div class="d-flex flex-column p-4">
+               <span>Name: Duke</span>
+               <span>Age: 6 years old</span>
+               <span>Breed: Poodle</span>
+               <span>Sex: Male</span>
+               <span>Size: Extra-Large</span>
+               <span>Health:</span>
+               <ul>
+                  <li>Spayed/Neutered</li>
+                  <li>Vaccinations up to date</li>
+               </ul>
+            </div>
+
+         </div>
+
+      </div>
+   </div>
+</div>
+
+
+<footer class="bg-footerColour border border-black pt-1 pb-0">
+   <div class="container">
+      <div class="row">
+         <!-- About Section appears at tops of footer on mobile, uses middle column on full browser view -->
+         <div class="col-12 col-md-4 order-1 order-md-2">
+            <div id="footerAbout" class="mb-4 p-2">
+               <h2 class="text-center d-none d-md-block">About</h2>
+               <p>Second Chance Pups is a compassionate non-profit organization dedicated to rescuing, rehabilitating,
+                  and rehoming dogs in need. Since 2010, we have committed to giving each dog a new lease on life,
+                  pairing them with loving homes that match their needs. Support our mission by adopting a furry friend,
+                  making a donation, or volunteering your time. Together, we can provide countless second chances to
+                  pups in need!</p>
+            </div>
+         </div>
+
+         <!-- Org and Contact Info appears on desktop as the left column, appears as a column underneath the about section on mobile -->
+         <div class="col-6 col-md-4 order-2 order-md-1">
+            <div id="footerOrg" class="mb-4 d-flex align-items-center p-2">
+               <img src="images/SecondChancePupsLogoTransparent.png" alt="Second Chance Pups Logo" height="120px"
+                    width="120px">
+               <div class="">
+                  <h2 id="scpNameFooter"
+                      class="d-flex flex-column d-md-inline-block align-items-md-start text-md-center">
+                     <span>Second</span> <span>Chance</span> <span>Pups</span></h2>
+                  <h4 class="d-none d-md-block text-center">Rescue and Rehabilitation</h4>
+               </div>
+            </div>
+            <div id="footerContact" class="p-2 pt-0 pb-0">
+               <h3 class="text-center d-none d-md-block">Contact</h3>
+               <div class="contactInfo p-1 pt-0 pb-0">
+                  <div>
+                     <span class="contactLabel">Phone: </span><span class="contactContent"><a href="tel:+2061234567">(306) 123-4567</a></span>
+                  </div>
+                  <div>
+                     <span class="contactLabel">Email: </span><span class="contactContent"><a
+                          href="mailto:info@secondchancepups.ca">info@secondchancepups.ca</a></span>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Socials, Donate, and Charity Info appears as the third column on desktop, appears as second column underneath about on mobile-->
+         <div class="col-6 col-md-4 order-3">
+            <div id="footerSocials" class="mb-4 p-2">
+               <h2 class="text-center d-none d-md-block">Socials</h2>
+               <div class="d-flex justify-content-between">
+                  <a href="https://www.facebook.com" class="text-black mr-3"><i class="bi bi-facebook"
+                                                                                style="font-size: 3rem;"></i></a>
+                  <a href="https://www.twitter.com" class="text-black mr-3"><i class="bi bi-twitter"
+                                                                               style="font-size: 3rem;"></i></a>
+                  <a href="https://www.instagram.com" class="text-black mr-3"><i class="bi bi-instagram"
+                                                                                 style="font-size: 3rem;"></i></a>
+                  <a href="https://www.youtube.com" class="text-black"><i class="bi bi-youtube"
+                                                                          style="font-size: 3rem;"></i></a>
+               </div>
+            </div>
+            <div id="footerDonate" class="p-2">
+               <a id="donateBtn" href="#" class="btn btn-primary btn-lg btn-block w-100 btn-donate">DONATE NOW</a>
+            </div>
+            <div id="footerCharity" class="p-3">
+               <p class="text-center">Non-Profit Organization<br/> EIN: 12-3456789</p>
+            </div>
+         </div>
+      </div>
+
+      <!-- Copyright Notice centered at the bottom of the page-->
+      <div class="row">
+         <div class="col-12 order-4 p-2 pt-0 pb-0 text-center">
+            <p class="text-italic">© 2024 Second Chance Pups. All rights reserved.</p>
+         </div>
+      </div>
+   </div>
 </footer>
 </body>
 </html>

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .dog{
-    width: 250px;
+    /*width: 250px;*/
     height: 550px;
     display: flex;
     flex-direction: column;
