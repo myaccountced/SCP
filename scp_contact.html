@@ -6,7 +6,6 @@
     <title>SCP Contact</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/scp_styles.css">
     <script src="scripts/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles/scp_contact_styles.css">
     <link rel="stylesheet" href="styles/scp_header_styles.css">
@@ -148,8 +147,9 @@
                         </div>
                     </div>
                     <div>
-                        <button class="btn btn--radius btn--green" type="submit">Submit</button>
+                        <button id="submitBtn" class="btn btn--radius btn--green" type="submit">Submit</button>
                     </div>
+                    <div id="alertMessage" class="alert alert-success">Success! Your message has been sent.</div>
                 </form>
             </div>
         </div>
