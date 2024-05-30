@@ -109,6 +109,11 @@ input {
     padding: 80px 90px;
 }
 
+/* FAQ styles */
+.container-fluid {
+    padding: 0 15%;
+}
+
 /**
 =================================
  media query for a smaller screen
