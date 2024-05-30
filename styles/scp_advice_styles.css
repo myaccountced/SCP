@@ -1,0 +1,110 @@
+/**
+=================================
+ body styles
+=================================
+**/
+
+/* Style of accordion contents */
+.accordion-body img { /* Center the image */
+    display: block;
+    margin: 1% auto 1% auto;
+}
+
+.accordion-body ul {
+    margin: 0 10% 0 10%; /* Center the list */
+}
+
+.accordion-body ul li, .accordion-body p {
+    font-size: 20px;
+}
+
+/* Suggested articles styles */
+.row {
+    margin: 0 0 0 10%;
+}
+
+.row .col {
+    border: 1px solid black;
+    margin: 1%;
+}
+
+.row .col:last-child {
+    margin: 1% 0 0 23%;
+}
+
+.image-text-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the middle */
+}
+
+.article-content {
+    margin-left: 10px; /* Adds some space between the image and the text */
+}
+
+.article-content p {
+    color: black; /* Set the text's color to black */
+}
+
+#articles a {
+    text-decoration: none; /* Remove the underline from the link */
+}
+
+#articles a h4 {
+    text-decoration: underline; /* Apply underline to the title */
+}
+
+/**
+=================================
+ media query for a bigger screen
+=================================
+**/
+@media only screen and (min-width: 991px) {
+    #lifeWithAPet {
+        margin-top: 10%;
+    }
+}
+
+/**
+=================================
+ media query for a smaller screen
+=================================
+**/
+@media only screen and (max-width: 991px) {
+    /**
+    =================================
+     body styles
+    =================================
+    **/
+    #video {
+        width: 90%;
+        height: 300px;
+    }
+
+    /* Style of accordion contents */
+    .accordion-body img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .accordion-body ul {
+        margin: 0; /* Remove the margin of the list */
+    }
+
+    .accordion-body ul li, .accordion-body p {
+        font-size: 15px;
+    }
+
+    /* suggested articles */
+    .row .col:last-child {
+        margin: 8% 10% 0 0;
+    }
+
+    .image-text-container { /* Put the title below the image and the paragraph below the title */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row .col {
+        margin: 8% 10% 0 0;
+    }
+}
