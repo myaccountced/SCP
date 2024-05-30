@@ -7,6 +7,10 @@
     flex-direction: column;
 }
 
+body{
+    margin-top: 200px;
+}
+
 
 .dog-top,.dog-bottom{
     flex: 1;
