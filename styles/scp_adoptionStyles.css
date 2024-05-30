@@ -7,10 +7,6 @@
     flex-direction: column;
 }
 
-body{
-    margin-top: 200px;
-}
-
 
 .dog-top,.dog-bottom{
     flex: 1;
@@ -32,4 +28,8 @@ body{
 .dog-bottom{
     padding: 20px;
     overflow: auto;
+}
+
+body{
+    margin-top: 210px;
 }
