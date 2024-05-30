@@ -1,8 +1,12 @@
 @charset "UTF-8";
 
+body {
+  background: #9dd6ef;
+}
+
 .masthead .container {
   background: #9dd6ef;
-  margin-top: 10rem;
+  margin-top: 15rem;
 }
 
 .divider-custom {
@@ -12,6 +16,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .divider-custom .divider-custom-line {
   width: 100%;
   max-width: 7rem;
@@ -50,4 +55,94 @@
 }
 .masthead .masthead-avatar {
   width: 15rem;
+}
+
+
+
+
+.profile-card {
+  font-family: 'Open Sans', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  height: 368px;
+  border: none;
+  padding: 38px 10px;
+}
+
+.profile-card .background {
+  width: 100%;
+  opacity: 0.9;
+  filter: blur(5px);
+  transform: scale(2.8);
+}
+
+.profile-card .card-content {
+  width: 100%;
+  padding: 15px 25px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.profile-card .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  max-width: 100px;
+  opacity: 1;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 1);
+  transform: translate(-50%, 0%);
+}
+
+.profile-card h2 {
+  margin: 0 0 5px;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.profile-card h2 small {
+  display: block;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.profile-card i {
+  display: inline-block;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  border: 1px solid #fff;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.profile-card .icon-block {
+  float: left;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.profile-card .icon-block a {
+  text-decoration: none;
+}
+
+.profile-card i:hover {
+  background-color: #fff;
+  color: #2E3434;
+  text-decoration: none;
+}
+
+#profiles {
+  display: flex;
+  flex-wrap: wrap; /* allows the items to wrap onto multiple lines */
+  margin-left: 16%;
 }
