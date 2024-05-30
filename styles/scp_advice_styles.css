@@ -4,22 +4,6 @@
 =================================
 **/
 
-/* Style the custom button icon */
-.accordion-button::after {
-    display: none;
-}
-
-.accordion-button {
-    font-size: 80%;
-}
-
-.accordion-icon {
-    position: absolute;
-    right: 0;
-    top: 45%;
-    transform: translateY(-50%); /* Fine-tune vertical centering */
-}
-
 /* Style of accordion contents */
 .accordion-body img { /* Center the image */
     display: block;
@@ -71,6 +55,17 @@
 
 /**
 =================================
+ media query for a bigger screen
+=================================
+**/
+@media only screen and (min-width: 991px) {
+    #lifeWithAPet {
+        margin-top: 10%;
+    }
+}
+
+/**
+=================================
  media query for a smaller screen
 =================================
 **/
@@ -85,18 +80,18 @@
         height: 300px;
     }
 
-    /* accordion styles */
-    .accordion-button {
-        font-size: 60%;
+    /* Style of accordion contents */
+    .accordion-body img {
+        height: 100%;
+        width: 100%;
     }
 
-    .accordion-item:nth-of-type(3) .accordion-icon {
-        height: 70%; /* for the third accordion since the image stretches as there are 2 rows */
+    .accordion-body ul {
+        margin: 0; /* Remove the margin of the list */
     }
 
-    .accordion-icon {
-        height: 70%;
-        width: 10%;
+    .accordion-body ul li, .accordion-body p {
+        font-size: 15px;
     }
 
     /* suggested articles */
@@ -111,19 +106,5 @@
 
     .row .col {
         margin: 8% 10% 0 0;
-    }
-
-    /* Style of accordion contents */
-    .accordion-body img {
-        height: 100%;
-        width: 100%;
-    }
-
-    .accordion-body ul {
-        margin: 0; /* Remove the margin of the list */
-    }
-
-    .accordion-body ul li, .accordion-body p {
-        font-size: 15px;
     }
 }

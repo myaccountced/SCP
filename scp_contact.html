@@ -8,275 +8,618 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/scp_styles.css">
     <script src="scripts/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/scp_contact_styles.css">
+    <link rel="stylesheet" href="styles/scp_header_styles.css">
 </head>
 <body>
+<div class="header-container">
+    <div class="nav-container">
+        <nav class="navbar navbar-expand-lg navbar-light">
 
-<div>
-    <h1>Contacts</h1>
-    <div>
-        <span class="bi bi-map"></span>
-        <p><strong>Address:</strong>stuff</p>
-    </div>
+            <div class="container bg-light col-lg-auto">
+                <div class="d-flex justify-content-between align-items-center">
+                    <img src="images/logo.png" />
+                    <div class="d-flex flex-column align-items-center">
+                        <p class="m-0 h3">Second Chance</p>
+                        <p class="m-0 h3">Pups</p>
+                        <p class="m-0 h4">Rescue and</p>
+                        <p class="m-0 h4">Rehabilitation</p>
+                    </div>
+                </div>
+            </div>
 
-    <div>
-        <span class="bi bi-telephone"></span>
-        <p><strong>Phone:</strong>stuff</p>
-    </div>
+            <div class="container" id="menubar">
+                <p></p> <!-- This element keeps the menu icon to the right -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
 
-    <div>
-        <span class="bi bi-envelope-fill"></span>
-        <p><strong>Email:</strong>stuff</p>
-    </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-nowrap">
+                    <li class="nav-item">
+                        <span class="bi bi-house-door-fill"></span>
+                        <a class="nav-link" href="scp_home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="images/paw.png" height="25" width="25"/>
+                        <a class="nav-link" href="scp_adoption.html">Adopt</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="bi bi-info-circle-fill"></span>
+                        <a class="nav-link" href="scp_advice.html">Dog Advice</a>
+                    </li>
+                    <li class="nav-item active">
+                        <span class="bi bi-telephone-fill"></span>
+                        <a class="nav-link" href="scp_contact.html">Contact/Find Us</a>
+                    </li>
+                </ul>
+            </div>
 
-    <div>
-        <span class="bi bi-globe"></span>
-        <p><strong>Website</strong>stuff</p>
+        </nav>
     </div>
 </div>
+
+
+<!--body-->
+<h1 class="text-center" id="contactsH1">Contacts</h1>
+
+<section class="features-icons bg-light text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex"><span class="bi bi-map m-auto text-primary"></span></div>
+                    <h3>Address</h3>
+                    <p class="lead mb-0">Riversdale, Saskatoon, SK S7M 1W2</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex"><span class="bi bi-telephone m-auto text-primary"></span></div>
+                    <h3>Phone</h3>
+                    <p class="lead mb-0">+1 (306) 476-3245</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex"><span class="bi bi-envelope-fill m-auto text-primary"></span></div>
+                    <h3>Email</h3>
+                    <p class="lead mb-0">scpets@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex"><span class="bi bi-globe m-auto text-primary"></span></div>
+                    <h3>Website</h3>
+                    <p class="lead mb-0"><a href="http://localhost:63342/SCP/scp_home.html">www.scpets.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1540.392693392587!2d-106.67887002050084!3d52.128499241082494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTLCsDA3JzQyLjAiTiAxMDbCsDQwJzQ5LjMiVw!5e1!3m2!1sen!2sca!4v1716915331302!5m2!1sen!2sca"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+
 <!--form-->
-<div>
-    <h1>Reach Us</h1>
+<div class="page-wrapper">
+    <div class="wrapper">
+        <div class="card card-2">
+            <div class="card-heading"></div>
+            <div class="card-body">
+                <h2 class="title">Reach Us</h2>
+                <form method="POST">
+                    <div class="input-group">
+                        <input class="input--style-2" type="text" placeholder="Name" name="name" required>
+                    </div>
+                    <div class="col-2">
+                        <div class="input-group">
+                            <input class="input--style-2" type="email" placeholder="Email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="input-group">
+                            <input class="input--style-2" type="tel" placeholder="Phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="input-group">
+                            <div class="rs-select2">
+                                <select name="gender">
+                                    <option disabled="disabled" selected="selected">Purpose</option>
+                                    <option>Question</option>
+                                    <option>Donation</option>
+                                    <option>Volunteering</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="input-group">
+                            <label>
+                                    <textarea class="input--style-2" placeholder="Type here your message here"
+                                              name="message" id="message" rows="8" cols="60" required></textarea>
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn--radius btn--green" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <form action="#" method="post">
-        <div>
-            <label for="fullName">Full Name:</label>
-            <input type="text" id="fullName" name="fullName" required>
+<div class="container-fluid bg-light">
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="text-dark">Frequently Asked Questions</h1>
+            <p class="text-dark">
+                Welcome to our dog rescue center's FAQ section! We understand that adopting a furry friend comes with many questions, and we're here to provide answers to the most common inquiries. Whether you're curious about our adoption process, the care we provide to our rescue dogs, or how you can get involved as a volunteer, you'll find the information you need right here. Explore our FAQ to learn more about our mission, our commitment to animal welfare, and how together, we can make a difference in the lives of these wonderful dogs. If you can't find the answer you're looking for, don't hesitate to reach out to our dedicated team – we're always happy to assist you on your journey to finding your perfect canine companion.
+            </p>
         </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <div class="col-md-6">
+            <img src="images/dogFAQ.png" height="300" width="250" class="img-fluid float-md-center mt-2" alt="Dog FAQ">
         </div>
-        <div>
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required>
-        </div>
-        <div>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <div>
-            <label for="purpose">Purpose:</label>
-            <select id="purpose" name="purpose">
-                <option value="question">Question</option>
-                <option value="donation">Donation</option>
-                <option value="volunteering">Volunteering</option>
-            </select>
-        </div>
-        <button type="submit">Send Message</button>
-        <img src="images/dogForm.png" height="279" width="250"/>
-    </form>
+    </div>
 </div>
 
 <div>
-    <h1>Frequently Asked Questions</h1>
-    <p>
-        Welcome to our dog rescue center's FAQ section! We understand that adopting a furry friend comes with many questions, and we're here to provide answers to the most common inquiries. Whether you're curious about our adoption process, the care we provide to our rescue dogs, or how you can get involved as a volunteer, you'll find the information you need right here. Explore our FAQ to learn more about our mission, our commitment to animal welfare, and how together, we can make a difference in the lives of these wonderful dogs. If you can't find the answer you're looking for, don't hesitate to reach out to our dedicated team – we're always happy to assist you on your journey to finding your perfect canine companion.
-    </p>
-    <img src="images/dogFAQ.png" height="200" width="150"/>
-</div>
+    <div class="container">
+        <h1 class="text-center mt-4">General Information</h1>
 
-<div>
-    <div>
-        <h2>General Information</h2>
+        <div class="accordion accordion-flush" id="accordionFlushExampleGI">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneGI">
+                    <button class="accordion-button collapsed text-nowrap" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneGI" aria-expanded="false" aria-controls="flush-collapseOneGI">
+                        How does your dog rescue center operate?
+                    </button>
+                </h2>
 
-        <div>
-            <h3>How does your dog rescue center operate?</h3>
-            <p>
-                Our dog rescue center operates as a non-profit organization dedicated to rescuing, rehabilitating, and rehoming dogs in need. We rely on the support of volunteers, donations, and community partnerships to fulfill our mission.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
-        </div>
-        <div>
-            <h3>What types of dogs do you rescue?</h3>
-            <p>
-                We rescue dogs of all breeds, ages, and sizes. Our priority is to help dogs that are homeless, abandoned, or at risk of euthanasia in shelters. Each dog receives necessary medical care, behavioral assessment, and love while they await adoption.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
-        </div>
-        <div>
-            <h3>How can I visit your rescue center?</h3>
-            <p>
-                We welcome visitors by appointment to ensure a personalized experience for each guest. Please contact us via phone or email to schedule a visit and learn more about our facility, our dogs, and how you can get involved.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
-        </div>
-        <div>
-            <h3>Are you a no-kill rescue center?</h3>
-            <p>
-                Yes, we are proud to be a no-kill rescue center. We believe that every dog deserves a chance at a happy and fulfilling life, and we are committed to providing a safe haven for dogs until they find their forever homes.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
-        </div>
-        <div>
-            <h3>How can I stay updated on your rescue center's activities and events?</h3>
-            <p>
-                You can stay updated on our rescue center's activities, upcoming events, and available dogs by following us on social media, subscribing to our newsletter, or regularly visiting our website's news section.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
+                <div id="flush-collapseOneGI" class="accordion-collapse collapse" aria-labelledby="flush-headingOneGI" data-bs-parent="#accordionFlushExampleGI">
+                    <div class="accordion-body">
+                        <p>
+                            Our dog rescue center operates as a non-profit organization dedicated to rescuing, rehabilitating, and rehoming dogs in need. We rely on the support of volunteers, donations, and community partnerships to fulfill our mission.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoGI">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoGI" aria-expanded="false" aria-controls="flush-collapseTwoGI">
+                        What types of dogs do you rescue?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseTwoGI" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoGI" data-bs-parent="#accordionFlushExampleGI">
+                    <div class="accordion-body">
+                        <p>
+                            We rescue dogs of all breeds, ages, and sizes. Our priority is to help dogs that are homeless, abandoned, or at risk of euthanasia in shelters. Each dog receives necessary medical care, behavioral assessment, and love while they await adoption.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeGI">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeGI" aria-expanded="false" aria-controls="flush-collapseThreeGI">
+                        How can I visit your rescue center?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseThreeGI" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeGI" data-bs-parent="#accordionFlushExampleGI">
+                    <div class="accordion-body">
+                        <p>
+                            We welcome visitors by appointment to ensure a personalized experience for each guest. Please contact us via phone or email to schedule a visit and learn more about our facility, our dogs, and how you can get involved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFourGI">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourGI" aria-expanded="false" aria-controls="flush-collapseFourGI">
+                        Are you a no-kill rescue center?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseFourGI" class="accordion-collapse collapse" aria-labelledby="flush-headingFourGI" data-bs-parent="#accordionFlushExampleGI">
+                    <div class="accordion-body">
+                        <p>
+                            Yes, we are proud to be a no-kill rescue center. We believe that every dog deserves a chance at a happy and fulfilling life, and we are committed to providing a safe haven for dogs until they find their forever homes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFiveGI">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFiveGI" aria-expanded="false" aria-controls="flush-collapseFiveGI">
+                        How can I stay updated on your rescue center's activities and events?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseFiveGI" class="accordion-collapse collapse" aria-labelledby="flush-headingFiveGI" data-bs-parent="#accordionFlushExampleGI">
+                    <div class="accordion-body">
+                        <p>
+                            You can stay updated on our rescue center's activities, upcoming events, and available dogs by following us on social media, subscribing to our newsletter, or regularly visiting our website's news section.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div>
-        <h2>Adoption Process</h2>
+    <div class="container">
+        <h1 class="text-center mt-4">Adoption Process</h1>
 
-        <div>
-            <h3>What is the process for adopting a dog from your rescue center?</h3>
-            <p>
-                Our adoption process begins with filling out an adoption application form, followed by a thorough review of the application by our adoption team. If approved, we'll schedule a meet-and-greet with the dog(s) you're interested in. Once a match is made, we'll finalize the adoption paperwork and provide you with all necessary information and resources for a successful transition.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
-        </div>
-        <div>
-            <h3>What are the requirements for adopting a dog?</h3>
-            <p>
-                We require potential adopters to be at least 18 years old, have stable housing, and be able to provide a loving and responsible forever home for the dog. We also conduct home visits and reference checks as part of the adoption process.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
-        </div>
-        <div>
-            <h3>Are your dogs spayed/neutered and vaccinated before adoption?</h3>
-            <p>
-                Yes, all dogs available for adoption are spayed/neutered, up-to-date on vaccinations, and microchipped. We prioritize the health and well-being of our dogs and ensure they receive necessary medical care before finding their forever homes.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
-        </div>
-        <div>
-            <h3>Can I adopt a dog if I live outside your area?</h3>
-            <p>
-                Yes, we consider adoption applications from out-of-area applicants; however, we may require additional steps such as virtual meetings and references from local veterinarians or rescue organizations.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
-        </div>
-        <div>
-            <h3>Is there an adoption fee?</h3>
-            <p>
-                Yes, there is an adoption fee that helps cover the cost of the dog's medical care, food, and other expenses incurred during their stay at our rescue center. The adoption fee varies depending on the dog's age, breed, and medical needs.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
+        <div class="accordion accordion-flush" id="accordionFlushExampleAP">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneAP">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneAP" aria-expanded="false" aria-controls="flush-collapseOneAP">
+                        What is the process for adopting a dog from your rescue center?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseOneAP" class="accordion-collapse collapse" aria-labelledby="flush-headingOneAP" data-bs-parent="#accordionFlushExampleAP">
+                    <div class="accordion-body">
+                        <p>
+                            Our adoption process begins with filling out an adoption application form, followed by a thorough review of the application by our adoption team. If approved, we'll schedule a meet-and-greet with the dog(s) you're interested in. Once a match is made, we'll finalize the adoption paperwork and provide you with all necessary information and resources for a successful transition.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoAP">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoAP" aria-expanded="false" aria-controls="flush-collapseTwoAP">
+                        What are the requirements for adopting a dog?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseTwoAP" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoAP" data-bs-parent="#accordionFlushExampleAP">
+                    <div class="accordion-body">
+                        <p>
+                            We require potential adopters to be at least 18 years old, have stable housing, and be able to provide a loving and responsible forever home for the dog. We also conduct home visits and reference checks as part of the adoption process.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeAP">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeAP" aria-expanded="false" aria-controls="flush-collapseThreeAP">
+                        Are your dogs spayed/neutered and vaccinated before adoption?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseThreeAP" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeAP" data-bs-parent="#accordionFlushExampleAP">
+                    <div class="accordion-body">
+                        <p>
+                            Yes, all dogs available for adoption are spayed/neutered, up-to-date on vaccinations, and microchipped. We prioritize the health and well-being of our dogs and ensure they receive necessary medical care before finding their forever homes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFourAP">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourAP" aria-expanded="false" aria-controls="flush-collapseFourAP">
+                        Can I adopt a dog if I live outside your area?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseFourAP" class="accordion-collapse collapse" aria-labelledby="flush-headingFourAP" data-bs-parent="#accordionFlushExampleAP">
+                    <div class="accordion-body">
+                        <p>
+                            Yes, we consider adoption applications from out-of-area applicants; however, we may require additional steps such as virtual meetings and references from local veterinarians or rescue organizations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFiveAP">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFiveAP" aria-expanded="false" aria-controls="flush-collapseFiveAP">
+                        Is there an adoption fee?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseFiveAP" class="accordion-collapse collapse" aria-labelledby="flush-headingFiveAP" data-bs-parent="#accordionFlushExampleAP">
+                    <div class="accordion-body">
+                        <p>
+                            Yes, there is an adoption fee that helps cover the cost of the dog's medical care, food, and other expenses incurred during their stay at our rescue center. The adoption fee varies depending on the dog's age, breed, and medical needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div>
-        <h2>Facilities</h2>
+    <div class="container">
+        <h1 class="text-center mt-4">Facilities</h1>
 
-        <div>
-            <h3>What are the facilities like at your rescue center?</h3>
-            <p>
-                Our rescue center features comfortable indoor kennels, spacious outdoor play areas, and dedicated spaces for training, grooming, and medical care. We prioritize the safety, comfort, and well-being of our dogs and ensure they have a clean and enriching environment while in our care.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
-        </div>
-        <div>
-            <h3>Do you provide training and socialization for the dogs?</h3>
-            <p>
-                Yes, we have a team of experienced staff and volunteers who provide training, socialization, and enrichment activities for the dogs. We tailor our approach to meet each dog's individual needs and help them become well-adjusted and adoptable companions.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
-        </div>
-        <div>
-            <h3>How often do the dogs receive veterinary care?</h3>
-            <p>
-                Our dogs receive regular veterinary care, including wellness exams, vaccinations, and treatment for any medical issues. We work closely with trusted veterinarians to ensure our dogs are healthy and happy during their stay at our rescue center.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
-        </div>
-        <div>
-            <h3>Are visitors allowed to interact with the dogs at your rescue center?</h3>
-            <p>
-                Yes, visitors are welcome to interact with the dogs under the supervision of our staff and volunteers. We believe socialization and human interaction are important for the well-being of our dogs and encourage positive interactions between visitors and our canine residents.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
-        </div>
-        <div>
-            <h3>Are your facilities accessible to individuals with disabilities?</h3>
-            <p>
-                Yes, we strive to make our facilities accessible to all individuals, including those with disabilities. If you have specific accessibility needs or require assistance during your visit, please let us know, and we'll do our best to accommodate you.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
+        <div class="accordion accordion-flush" id="accordionFlushExampleF">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneF">
+                    <button class="accordion-button collapsed text-nowrap" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneF" aria-expanded="false" aria-controls="flush-collapseOneF">
+                        What are the facilities like at your rescue center?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseOneF" class="accordion-collapse collapse" aria-labelledby="flush-headingOneF" data-bs-parent="#accordionFlushExampleF">
+                    <div class="accordion-body">
+                        <p>
+                            Our rescue center features comfortable indoor kennels, spacious outdoor play areas, and dedicated spaces for training, grooming, and medical care. We prioritize the safety, comfort, and well-being of our dogs and ensure they have a clean and enriching environment while in our care.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoF">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoF" aria-expanded="false" aria-controls="flush-collapseTwoF">
+                        Do you provide training and socialization for the dogs?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseTwoF" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoF" data-bs-parent="#accordionFlushExampleF">
+                    <div class="accordion-body">
+                        <p>
+                            Yes, we have a team of experienced staff and volunteers who provide training, socialization, and enrichment activities for the dogs. We tailor our approach to meet each dog's individual needs and help them become well-adjusted and adoptable companions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeF">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeF" aria-expanded="false" aria-controls="flush-collapseThreeF">
+                        How often do the dogs receive veterinary care?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseThreeF" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeF" data-bs-parent="#accordionFlushExampleF">
+                    <div class="accordion-body">
+                        <p>
+                            Our dogs receive regular veterinary care, including wellness exams, vaccinations, and treatment for any medical issues. We work closely with trusted veterinarians to ensure our dogs are healthy and happy during their stay at our rescue center.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFourF">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourF" aria-expanded="false" aria-controls="flush-collapseFourF">
+                        Are visitors allowed to interact with the dogs at your rescue center?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseFourF" class="accordion-collapse collapse" aria-labelledby="flush-headingFourF" data-bs-parent="#accordionFlushExampleF">
+                    <div class="accordion-body">
+                        <p>
+                            Yes, visitors are welcome to interact with the dogs under the supervision of our staff and volunteers. We believe socialization and human interaction are important for the well-being of our dogs and encourage positive interactions between visitors and our canine residents.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFiveF">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFiveF" aria-expanded="false" aria-controls="flush-collapseFiveF">
+                        Are your facilities accessible to individuals with disabilities?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseFiveF" class="accordion-collapse collapse" aria-labelledby="flush-headingFiveF" data-bs-parent="#accordionFlushExampleF">
+                    <div class="accordion-body">
+                        <p>
+                            Yes, we strive to make our facilities accessible to all individuals, including those with disabilities. If you have specific accessibility needs or require assistance during your visit, please let us know, and we'll do our best to accommodate you.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div>
-        <h2>Volunteering</h2>
 
-        <div>
-            <h3>How can I become a volunteer at your rescue center?</h3>
-            <p>
-                Becoming a volunteer at our rescue center is easy! Simply fill out a volunteer application form on our website or contact us directly to express your interest. We'll provide you with information about our volunteer opportunities, training, and orientation sessions.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
-        </div>
-        <div>
-            <h3>What types of volunteer opportunities are available?</h3>
-            <p>
-                We offer a variety of volunteer opportunities, including dog walking, socialization, grooming, administrative tasks, event coordination, and fundraising. Whether you're a dog lover, a skilled organizer, or a social media enthusiast, there's a volunteer role for you at our rescue center.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
-        </div>
-        <div>
-            <h3>Do I need any previous experience to volunteer?</h3>
-            <p>
-                No previous experience is required to volunteer at our rescue center. We provide training, guidance, and ongoing support to all our volunteers to ensure they feel confident and comfortable in their roles.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
-        </div>
-        <div>
-            <h3>Can I volunteer if I'm under 18 years old?</h3>
-            <p>
-                Yes, we welcome volunteers of all ages; however, volunteers under 18 years old must have parental consent and be accompanied by a parent or guardian while volunteering at our rescue center.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
-        </div>
-        <div>
-            <h3>What is the time commitment required for volunteering?</h3>
-            <p>
-                The time commitment required for volunteering varies depending on the volunteer role and your availability. Whether you can volunteer once a week, once a month, or on an occasional basis, your contributions make a difference in the lives of our dogs.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
+
+    <div class="container">
+        <h1 class="text-center mt-4">Volunteering</h1>
+
+        <div class="accordion accordion-flush" id="accordionFlushExampleV">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneV">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneV" aria-expanded="false" aria-controls="flush-collapseOneV">
+                        How can I become a volunteer at your rescue center?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseOneV" class="accordion-collapse collapse" aria-labelledby="flush-headingOneV" data-bs-parent="#accordionFlushExampleV">
+                    <div class="accordion-body">
+                        <p>
+                            Becoming a volunteer at our rescue center is easy! Simply fill out a volunteer application form on our website or contact us directly to express your interest. We'll provide you with information about our volunteer opportunities, training, and orientation sessions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoV">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoV" aria-expanded="false" aria-controls="flush-collapseTwoV">
+                        What types of volunteer opportunities are available?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseTwoV" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoV" data-bs-parent="#accordionFlushExampleV">
+                    <div class="accordion-body">
+                        <p>
+                            We offer a variety of volunteer opportunities, including dog walking, socialization, grooming, administrative tasks, event coordination, and fundraising. Whether you're a dog lover, a skilled organizer, or a social media enthusiast, there's a volunteer role for you at our rescue center.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeV">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeV" aria-expanded="false" aria-controls="flush-collapseThreeV">
+                        Do I need any previous experience to volunteer?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseThreeV" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeV" data-bs-parent="#accordionFlushExampleV">
+                    <div class="accordion-body">
+                        <p>
+                            No previous experience is required to volunteer at our rescue center. We provide training, guidance, and ongoing support to all our volunteers to ensure they feel confident and comfortable in their roles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFourV">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourV" aria-expanded="false" aria-controls="flush-collapseFourV">
+                        Can I volunteer if I'm under 18 years old?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseFourV" class="accordion-collapse collapse" aria-labelledby="flush-headingFourV" data-bs-parent="#accordionFlushExampleV">
+                    <div class="accordion-body">
+                        <p>
+                            Yes, we welcome volunteers of all ages; however, volunteers under 18 years old must have parental consent and be accompanied by a parent or guardian while volunteering at our rescue center.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFiveV">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFiveV" aria-expanded="false" aria-controls="flush-collapseFiveV">
+                        What is the time commitment required for volunteering?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseFiveV" class="accordion-collapse collapse" aria-labelledby="flush-headingFiveV" data-bs-parent="#accordionFlushExampleV">
+                    <div class="accordion-body">
+                        <p>
+                            The time commitment required for volunteering varies depending on the volunteer role and your availability. Whether you can volunteer once a week, once a month, or on an occasional basis, your contributions make a difference in the lives of our dogs.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div>
-        <h2>Donations and Support</h2>
 
-        <div>
-            <h3>How can I make a donation to support your rescue center?</h3>
-            <p>
-                Making a donation to support our rescue center is easy! You can donate online through our website, mail a check to our mailing address, or participate in fundraising events and campaigns organized by our organization.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
-        </div>
-        <div>
-            <h3>What will my donation be used for?</h3>
-            <p>
-                Your donation will be used to provide essential care, medical treatment, food, shelter, and enrichment activities for the dogs in our rescue center. Your support helps us save lives and give dogs a second chance at finding loving forever homes.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
-        </div>
-        <div>
-            <h3>Are donations tax-deductible?</h3>
-            <p>
-                Yes, we are a registered non-profit organization, and donations made to our rescue center are tax-deductible to the extent allowed by law. We provide donation receipts for all contributions received.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
-        </div>
-        <div>
-            <h3>Can I donate supplies or other items to your rescue center?</h3>
-            <p>
-                Yes, we accept donations of supplies such as dog food, toys, bedding, grooming supplies, and cleaning supplies. You can drop off donations at our rescue center during business hours or contact us to arrange a donation pickup.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
-        </div>
-        <div>
-            <h3>How else can I support your rescue center apart from donations?</h3>
-            <p>
-                Apart from donations, you can support our rescue center by volunteering your time, spreading awareness about our mission and programs, participating in adoption events, and advocating for responsible pet ownership in your community. Every action, big or small, makes a difference in the lives of our dogs.
-            </p>
-            <img src="images/pawDown.PNG" height="50" width="50"/>
+
+    <div class="container">
+        <h1 class="text-center mt-4">Donations and Support</h1>
+
+        <div class="accordion accordion-flush" id="accordionFlushExampleDS">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneDS">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneDS" aria-expanded="false" aria-controls="flush-collapseOneDS">
+                        How can I make a donation to support your rescue center?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseOneDS" class="accordion-collapse collapse" aria-labelledby="flush-headingOneDS" data-bs-parent="#accordionFlushExampleDS">
+                    <div class="accordion-body">
+                        <p>
+                            Making a donation to support our rescue center is easy! You can donate online through our website, mail a check to our mailing address, or participate in fundraising events and campaigns organized by our organization.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoDS">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoDS" aria-expanded="false" aria-controls="flush-collapseTwoDS">
+                        What will my donation be used for?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseTwoDS" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoDS" data-bs-parent="#accordionFlushExampleDS">
+                    <div class="accordion-body">
+                        <p>
+                            Your donation will be used to provide essential care, medical treatment, food, shelter, and enrichment activities for the dogs in our rescue center. Your support helps us save lives and give dogs a second chance at finding loving forever homes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeDS">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeDS" aria-expanded="false" aria-controls="flush-collapseThreeDS">
+                        Are donations tax-deductible?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseThreeDS" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeDS" data-bs-parent="#accordionFlushExampleDS">
+                    <div class="accordion-body">
+                        <p>
+                            Yes, we are a registered non-profit organization, and donations made to our rescue center are tax-deductible to the extent allowed by law. We provide donation receipts for all contributions received.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFourDS">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourDS" aria-expanded="false" aria-controls="flush-collapseFourDS">
+                        Can I donate supplies or other items to your rescue center?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseFourDS" class="accordion-collapse collapse" aria-labelledby="flush-headingFourDS" data-bs-parent="#accordionFlushExampleDS">
+                    <div class="accordion-body">
+                        <p>
+                            Yes, we accept donations of supplies such as dog food, toys, bedding, grooming supplies, and cleaning supplies. You can drop off donations at our rescue center during business hours or contact us to arrange a donation pickup.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFiveDS">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFiveDS" aria-expanded="false" aria-controls="flush-collapseFiveDS">
+                        How else can I support your rescue center apart from donations?
+                    </button>
+                </h2>
+
+                <div id="flush-collapseFiveDS" class="accordion-collapse collapse" aria-labelledby="flush-headingFiveDS" data-bs-parent="#accordionFlushExampleDS">
+                    <div class="accordion-body">
+                        <p>
+                            Apart from donations, you can support our rescue center by volunteering your time, spreading awareness about our mission and programs, participating in adoption events, and advocating for responsible pet ownership in your community. Every action, big or small, makes a difference in the lives of our dogs.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
