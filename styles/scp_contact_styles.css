@@ -1,0 +1,154 @@
+.features-icons .features-icons-item .features-icons-icon {
+    height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon span {
+    font-size: 4rem; /* Make the icons under contacts bigger */
+}
+
+#contactsH1 {
+    margin-top: 11%; /* Move down the first Header */
+}
+
+iframe {
+    margin: 2% 0 0 32%; /* Put the map to the middle */
+}
+
+.page-wrapper {
+    margin: 2% 15%;
+    /*margin: 30px 200px;*/
+}
+
+.col-2 {
+    width: calc((100% - 60px) / 2);
+}
+
+
+
+.wrapper {
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   search button
+   ========================================================================== */
+.page-wrapper .btn {
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 25px;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.4s ease;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn--radius {
+    border-radius: 3px;
+}
+
+.btn--green {
+    background: #57b846;
+}
+
+.btn--green:hover {
+    background: #4dae3c;
+}
+
+/* ==========================================================================
+   #FORM
+   ========================================================================== */
+input {
+    outline: none;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.input--style-2 {
+    padding: 9px 0;
+    color: #666;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* ==========================================================================
+   #TITLE
+   ========================================================================== */
+
+.title {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 37px;
+}
+
+/* ==========================================================================
+   #CARD
+   ========================================================================== */
+.card {
+    overflow: hidden;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.card-2 {
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    width: 100%;
+    display: table;
+}
+
+.card-2 .card-heading {
+    background: url("../images/dogForm.png") top left/cover no-repeat;
+    width: 29.1%;
+    display: table-cell;
+}
+
+.card-2 .card-body {
+    display: table-cell;
+    padding: 80px 90px;
+}
+
+@media (max-width: 767px) {
+    iframe {
+        margin: 2% 0 0 1%; /* Put the map to the middle */
+        width: 25rem;
+        height: 20rem;
+    }
+
+    /* Form styles */
+    .col-2 {
+        width: 100%; /* Put the purpose combo box to its own row */
+    }
+
+    .input-group textarea {
+        width: 100%; /* Decrease the width of the text area */
+    }
+
+    .page-wrapper {
+        margin: 5% 2%;
+    }
+
+    .card-2 {
+        display: block;
+    }
+    .card-2 .card-heading {
+        width: 100%;
+        display: block;
+        padding-top: 300px;
+        background-position: left center;
+    }
+    .card-2 .card-body {
+        display: block;
+        padding: 60px 50px;
+    }
+}

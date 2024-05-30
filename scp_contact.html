@@ -8,67 +8,150 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/scp_styles.css">
     <script src="scripts/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/scp_contact_styles.css">
+    <link rel="stylesheet" href="styles/scp_header_styles.css">
 </head>
 <body>
+<div class="header-container">
+    <div class="nav-container">
+        <nav class="navbar navbar-expand-lg navbar-light">
 
-<div>
-    <h1>Contacts</h1>
-    <div>
-        <span class="bi bi-map"></span>
-        <p><strong>Address:</strong>stuff</p>
-    </div>
+            <div class="container bg-light col-lg-auto">
+                <div class="d-flex justify-content-between align-items-center">
+                    <img src="images/logo.png" />
+                    <div class="d-flex flex-column align-items-center">
+                        <p class="m-0 h3">Second Chance</p>
+                        <p class="m-0 h3">Pups</p>
+                        <p class="m-0 h4">Rescue and</p>
+                        <p class="m-0 h4">Rehabilitation</p>
+                    </div>
+                </div>
+            </div>
 
-    <div>
-        <span class="bi bi-telephone"></span>
-        <p><strong>Phone:</strong>stuff</p>
-    </div>
+            <div class="container" id="menubar">
+                <p></p> <!-- This element keeps the menu icon to the right -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
 
-    <div>
-        <span class="bi bi-envelope-fill"></span>
-        <p><strong>Email:</strong>stuff</p>
-    </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-nowrap">
+                    <li class="nav-item">
+                        <span class="bi bi-house-door-fill"></span>
+                        <a class="nav-link" href="scp_home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="images/paw.png" height="25" width="25"/>
+                        <a class="nav-link" href="scp_adoption.html">Adopt</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="bi bi-info-circle-fill"></span>
+                        <a class="nav-link" href="scp_advice.html">Dog Advice</a>
+                    </li>
+                    <li class="nav-item active">
+                        <span class="bi bi-telephone-fill"></span>
+                        <a class="nav-link" href="scp_contact.html">Contact/Find Us</a>
+                    </li>
+                </ul>
+            </div>
 
-    <div>
-        <span class="bi bi-globe"></span>
-        <p><strong>Website</strong>stuff</p>
+        </nav>
     </div>
 </div>
+
+
+<!--body-->
+<h1 class="text-center" id="contactsH1">Contacts</h1>
+
+<section class="features-icons bg-light text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex"><span class="bi bi-map m-auto text-primary"></span></div>
+                    <h3>Address</h3>
+                    <p class="lead mb-0">Riversdale, Saskatoon, SK S7M 1W2</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex"><span class="bi bi-telephone m-auto text-primary"></span></div>
+                    <h3>Phone</h3>
+                    <p class="lead mb-0">+1 (306) 476-3245</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex"><span class="bi bi-envelope-fill m-auto text-primary"></span></div>
+                    <h3>Email</h3>
+                    <p class="lead mb-0">scpets@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex"><span class="bi bi-globe m-auto text-primary"></span></div>
+                    <h3>Website</h3>
+                    <p class="lead mb-0"><a href="http://localhost:63342/SCP/scp_home.html">www.scpets.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1540.392693392587!2d-106.67887002050084!3d52.128499241082494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTLCsDA3JzQyLjAiTiAxMDbCsDQwJzQ5LjMiVw!5e1!3m2!1sen!2sca!4v1716915331302!5m2!1sen!2sca"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-<!--form-->
-<div>
-    <h1>Reach Us</h1>
 
-    <form action="#" method="post">
-        <div>
-            <label for="fullName">Full Name:</label>
-            <input type="text" id="fullName" name="fullName" required>
+<!--form-->
+<div class="page-wrapper">
+    <div class="wrapper">
+        <div class="card card-2">
+            <div class="card-heading"></div>
+            <div class="card-body">
+                <h2 class="title">Reach Us</h2>
+                <form method="POST">
+                    <div class="input-group">
+                        <input class="input--style-2" type="text" placeholder="Name" name="name" required>
+                    </div>
+                    <div class="col-2">
+                        <div class="input-group">
+                            <input class="input--style-2" type="email" placeholder="Email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="input-group">
+                            <input class="input--style-2" type="tel" placeholder="Phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="input-group">
+                            <div class="rs-select2">
+                                <select name="gender">
+                                    <option disabled="disabled" selected="selected">Purpose</option>
+                                    <option>Question</option>
+                                    <option>Donation</option>
+                                    <option>Volunteering</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="input-group">
+                            <label>
+                                    <textarea class="input--style-2" placeholder="Type here your message here"
+                                              name="message" id="message" rows="8" cols="60" required></textarea>
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn--radius btn--green" type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div>
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required>
-        </div>
-        <div>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <div>
-            <label for="purpose">Purpose:</label>
-            <select id="purpose" name="purpose">
-                <option value="question">Question</option>
-                <option value="donation">Donation</option>
-                <option value="volunteering">Volunteering</option>
-            </select>
-        </div>
-        <button type="submit">Send Message</button>
-        <img src="images/dogForm.png" height="279" width="250"/>
-    </form>
+    </div>
 </div>
 
 <div>
