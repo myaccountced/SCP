@@ -6,10 +6,6 @@
     font-size: 4rem; /* Make the icons under contacts bigger */
 }
 
-/*#contactsH1 {*/
-/*    margin-top: 11%; !* Move down the first Header *!*/
-/*}*/
-
 iframe {
     margin: 2% 0 0 32%; /* Put the map to the middle */
 }
@@ -23,8 +19,6 @@ iframe {
 .col-2 {
     width: calc((100% - 60px) / 2);
 }
-
-
 
 .wrapper {
     margin: 0 auto;
