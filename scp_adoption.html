@@ -10,16 +10,17 @@
    <link rel="stylesheet" href="styles/scp_footerStyles.css">
    <link rel="stylesheet" href="styles/scp_adoptionStyles.css">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
    <script src="scripts/bootstrap.min.js"></script>
 </head>
 <body class="bg-bodyColour">
-<div class="header-container">
-   <div class="nav-container">
-      <nav class="navbar navbar-expand-lg navbar-light">
 
-         <div class="container bg-light col-lg-auto">
-            <div class="d-flex justify-content-between align-items-center">
-               <img src="images/logo.png" />
+<nav class="w-100 border border-black navbar bg-green navbar-expand-sm">
+   <div class="container justify-content-center">
+      <div class="row align-items-center w-100">
+         <div id="logo-container" class="col-12 col-sm-6 p-2 d-flex justify-content-center">
+            <div class="bg-white d-flex rounded-5 d-inline-block p-3 pt-0 pb-0">
+               <img src="images/logo.png" alt="Second Chance Pups logo image" width="140px"/>
                <div class="d-flex flex-column align-items-center">
                   <p class="m-0 h3">Second Chance</p>
                   <p class="m-0 h3">Pups</p>
@@ -28,38 +29,32 @@
                </div>
             </div>
          </div>
+         <div class="col-12 col-sm-6 d-flex justify-content-end">
 
-         <div class="container" id="menubar">
-            <p></p> <!-- This element keeps the menu icon to the right -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul id="linkList" class="navbar-nav w-100 justify-content-center">
+                  <li class="nav-item mb-3">
+                     <a class="fas bi bi-house-door-fill nav-link text-center text-nowrap" href="scp_home.html">Home</a>
+                  </li>
+                  <li class="nav-item mb-3">
+                     <a class="fas fa-paw nav-link nav-link text-center text-nowrap active" href="scp_adoption.html">Adopt</a>
+                  </li>
+                  <li class="nav-item mb-3">
+                     <a class="fas bi bi-info-circle-fill nav-link text-center text-nowrap" href="scp_advice.html">Dog Advice</a>
+                  </li>
+                  <li class="nav-item mb-3">
+                     <a class="fas bi bi-telephone-fill nav-link text-center text-nowrap" href="scp_contact.html">Contact/Find Us</a>
+                  </li>
+               </ul>
+            </div>
          </div>
-
-         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav text-nowrap">
-               <li class="nav-item">
-                  <span class="bi bi-house-door-fill"></span>
-                  <a class="nav-link" href="scp_home.html">Home</a>
-               </li>
-               <li class="nav-item active">
-                  <img src="images/paw.png" height="25" width="25"/>
-                  <a class="nav-link" href="scp_adoption.html">Adopt</a>
-               </li>
-               <li class="nav-item">
-                  <span class="bi bi-info-circle-fill"></span>
-                  <a class="nav-link" href="scp_advice.html">Dog Advice</a>
-               </li>
-               <li class="nav-item">
-                  <span class="bi bi-telephone-fill"></span>
-                  <a class="nav-link" href="scp_contact.html">Contact/Find Us</a>
-               </li>
-            </ul>
-         </div>
-
-      </nav>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+      </div>
    </div>
-</div>
+</nav>
+
 
 <div class="w-80 mx-auto mb-3 mt-3">
    <div class="container">
@@ -101,7 +96,7 @@
 
       <div class="row mt-2 mb-2 justify-content-center">
 
-         <div class="bg-panel col-4 col-md-3 mx-auto">
+         <div class="bg-panel col-6 col-md-3 mx-auto">
 
             <img class="mx-auto d-block img-fluid w-100 p-2" src="images/dogs/bailey.jpg" alt="photo of bailey">
             <div class="d-flex flex-column p-1">
@@ -119,7 +114,7 @@
 
          </div>
 
-         <div class="bg-panel col-4 col-md-3 mx-auto">
+         <div class="bg-panel col-6 col-md-3 mx-auto">
 
             <img class="mx-auto d-block img-fluid w-100 p-2" src="images/dogs/cooper.jpg" alt="photo of cooper">
             <div class="d-flex flex-column p-1">
@@ -137,7 +132,7 @@
 
          </div>
 
-         <div class="bg-panel col-4 col-md-3 mx-auto">
+         <div class="bg-panel col-6 col-md-3 mx-auto">
 
             <img class="mx-auto d-block img-fluid w-100 p-2" src="images/dogs/sophie.jpg" alt="photo of sophie">
             <div class="d-flex flex-column p-1">
@@ -155,69 +150,7 @@
 
          </div>
 
-      </div>
-
-      <div class="row mt-2 mb-2 justify-content-center">
-
-         <div class="bg-panel col-4 col-md-3 mx-auto">
-
-            <img class="mx-auto d-block img-fluid p-2 w-100" src="images/dogs/bella.jpg" alt="photo of bella">
-            <div class="d-flex flex-column p-1">
-               <span>Name: Bella</span>
-               <span>Age: 3 years old</span>
-               <span>Breed: Labrador Retriever</span>
-               <span>Sex: Female</span>
-               <span>Size: Large</span>
-               <span>Health:</span>
-               <ul>
-                  <li>Spayed/Neutered</li>
-                  <li>Vaccinations up to date</li>
-               </ul>
-            </div>
-
-         </div>
-
-         <div class="bg-panel col-4 col-md-3 mx-auto">
-
-            <img class="mx-auto d-block img-fluid p-2 w-100" src="images/dogs/max.jpg" alt="photo of max">
-            <div class="d-flex flex-column p-1">
-               <span>Name: Max</span>
-               <span>Age: 2 years old</span>
-               <span>Breed: German Shepard Mix</span>
-               <span>Sex: Male</span>
-               <span>Size: Large</span>
-               <span>Health:</span>
-               <ul>
-                  <li>Spayed/Neutered</li>
-                  <li>Vaccinations up to date</li>
-               </ul>
-            </div>
-
-         </div>
-
-         <div class="bg-panel col-4 col-md-3 mx-auto">
-
-            <img class="mx-auto d-block img-fluid p-2 w-100" src="images/dogs/charlie.jpg" alt="photo of charlie">
-            <div class="d-flex flex-column p-1">
-               <span>Name: Charlie</span>
-               <span>Age: 5 years old</span>
-               <span>Breed: Beagle</span>
-               <span>Sex: Male</span>
-               <span>Size: Medium</span>
-               <span>Health:</span>
-               <ul>
-                  <li>Spayed/Neutered</li>
-                  <li>Vaccinations up to date</li>
-               </ul>
-            </div>
-
-         </div>
-
-      </div>
-
-      <div class="row mt-2 mb-2 justify-content-center">
-
-         <div class="bg-panel col-4 col-md-3 mx-auto">
+         <div class="bg-panel col-6 col-md-3 mx-auto">
 
             <img class="mx-auto d-block img-fluid p-2 w-100" src="images/dogs/daisy.jpg" alt="photo of daisy">
             <div class="d-flex flex-column p-1">
@@ -235,53 +168,18 @@
 
          </div>
 
-         <div class="bg-panel col-4 col-md-3 mx-auto">
-
-            <img class="mx-auto d-block img-fluid p-2 w-100" src="images/dogs/rocky.jpg" alt="photo of rocky">
-            <div class="d-flex flex-column p-1">
-               <span>Name: Rocky</span>
-               <span>Age: 1 years old</span>
-               <span>Breed: Siberian Husky</span>
-               <span>Sex: Male</span>
-               <span>Size: Large</span>
-               <span>Health:</span>
-               <ul>
-                  <li>Spayed/Neutered</li>
-                  <li>Vaccinations up to date</li>
-               </ul>
-            </div>
-
-         </div>
-
-         <div class="bg-panel col-4 col-md-3 mx-auto">
-
-            <img class="mx-auto d-block img-fluid p-2 w-100" src="images/dogs/lucy.jpg" alt="photo of lucy">
-            <div class="d-flex flex-column p-1">
-               <span>Name: Lucy</span>
-               <span>Age: 6 years old</span>
-               <span>Breed: Poodle</span>
-               <span>Sex: Male</span>
-               <span>Size: Small</span>
-               <span>Health:</span>
-               <ul>
-                  <li>Spayed/Neutered</li>
-                  <li>Vaccinations up to date</li>
-               </ul>
-            </div>
-
-         </div>
 
       </div>
 
       <div class="row mt-2 mb-2 justify-content-center">
 
-         <div class="bg-panel col-4 col-md-3 mx-auto">
+         <div class="bg-panel col-6 col-md-3 mx-auto">
 
-            <img class="mx-auto d-block img-fluid p-2 w-100" src="images/dogs/buddy.jpg" alt="photo of buddy">
+            <img class="mx-auto d-block img-fluid p-2 w-100" src="images/dogs/bella.jpg" alt="photo of bella">
             <div class="d-flex flex-column p-1">
-               <span>Name: Buddy</span>
-               <span>Age: 4 years old</span>
-               <span>Breed: Golden Retriever</span>
+               <span>Name: Bella</span>
+               <span>Age: 3 years old</span>
+               <span>Breed: Labrador Retriever</span>
                <span>Sex: Female</span>
                <span>Size: Large</span>
                <span>Health:</span>
@@ -293,15 +191,15 @@
 
          </div>
 
-         <div class="bg-panel col-4 col-md-3 mx-auto">
+         <div class="bg-panel col-6 col-md-3 mx-auto">
 
-            <img class="mx-auto d-block img-fluid p-2 w-100 mx-auto" src="images/dogs/zoe.jpg" alt="photo of zoe">
+            <img class="mx-auto d-block img-fluid p-2 w-100" src="images/dogs/max.jpg" alt="photo of max">
             <div class="d-flex flex-column p-1">
-               <span>Name: Zoe</span>
-               <span>Age: 5 years old</span>
-               <span>Breed: Shih Tzu</span>
-               <span>Sex: Female</span>
-               <span>Size: Small</span>
+               <span>Name: Max</span>
+               <span>Age: 2 years old</span>
+               <span>Breed: German Shepard Mix</span>
+               <span>Sex: Male</span>
+               <span>Size: Large</span>
                <span>Health:</span>
                <ul>
                   <li>Spayed/Neutered</li>
@@ -311,7 +209,25 @@
 
          </div>
 
-         <div class="bg-panel col-4 col-md-3 mx-auto" >
+         <div class="bg-panel col-6 col-md-3 mx-auto">
+
+            <img class="mx-auto d-block img-fluid p-2 w-100" src="images/dogs/charlie.jpg" alt="photo of charlie">
+            <div class="d-flex flex-column p-1">
+               <span>Name: Charlie</span>
+               <span>Age: 5 years old</span>
+               <span>Breed: Beagle</span>
+               <span>Sex: Male</span>
+               <span>Size: Medium</span>
+               <span>Health:</span>
+               <ul>
+                  <li>Spayed/Neutered</li>
+                  <li>Vaccinations up to date</li>
+               </ul>
+            </div>
+
+         </div>
+
+         <div class="bg-panel col-6 col-md-3 mx-auto" >
 
             <img class="mx-auto d-block img-fluid p-2 w-100" src="images/dogs/duke.jpg" alt="photo of duke">
             <div class="d-flex flex-column p-1">
@@ -330,6 +246,84 @@
          </div>
 
       </div>
+
+      <div class="row mt-2 mb-2 justify-content-center">
+
+         <div class="bg-panel col-6 col-md-3 mx-auto">
+
+            <img class="mx-auto d-block img-fluid p-2 w-100" src="images/dogs/rocky.jpg" alt="photo of rocky">
+            <div class="d-flex flex-column p-1">
+               <span>Name: Rocky</span>
+               <span>Age: 1 years old</span>
+               <span>Breed: Siberian Husky</span>
+               <span>Sex: Male</span>
+               <span>Size: Large</span>
+               <span>Health:</span>
+               <ul>
+                  <li>Spayed/Neutered</li>
+                  <li>Vaccinations up to date</li>
+               </ul>
+            </div>
+
+         </div>
+
+         <div class="bg-panel col-6 col-md-3 mx-auto">
+
+            <img class="mx-auto d-block img-fluid p-2 w-100" src="images/dogs/lucy.jpg" alt="photo of lucy">
+            <div class="d-flex flex-column p-1">
+               <span>Name: Lucy</span>
+               <span>Age: 6 years old</span>
+               <span>Breed: Poodle</span>
+               <span>Sex: Male</span>
+               <span>Size: Small</span>
+               <span>Health:</span>
+               <ul>
+                  <li>Spayed/Neutered</li>
+                  <li>Vaccinations up to date</li>
+               </ul>
+            </div>
+
+         </div>
+
+         <div class="bg-panel col-6 col-md-3 mx-auto">
+
+            <img class="mx-auto d-block img-fluid p-2 w-100" src="images/dogs/buddy.jpg" alt="photo of buddy">
+            <div class="d-flex flex-column p-1">
+               <span>Name: Buddy</span>
+               <span>Age: 4 years old</span>
+               <span>Breed: Golden Retriever</span>
+               <span>Sex: Female</span>
+               <span>Size: Large</span>
+               <span>Health:</span>
+               <ul>
+                  <li>Spayed/Neutered</li>
+                  <li>Vaccinations up to date</li>
+               </ul>
+            </div>
+
+         </div>
+
+
+         <div class="bg-panel col-6 col-md-3 mx-auto">
+
+            <img class="mx-auto d-block img-fluid p-2 w-100 mx-auto" src="images/dogs/zoe.jpg" alt="photo of zoe">
+            <div class="d-flex flex-column p-1">
+               <span>Name: Zoe</span>
+               <span>Age: 5 years old</span>
+               <span>Breed: Shih Tzu</span>
+               <span>Sex: Female</span>
+               <span>Size: Small</span>
+               <span>Health:</span>
+               <ul>
+                  <li>Spayed/Neutered</li>
+                  <li>Vaccinations up to date</li>
+               </ul>
+            </div>
+
+         </div>
+
+      </div>
+
    </div>
 </div>
 
