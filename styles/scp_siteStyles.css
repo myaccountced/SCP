@@ -59,13 +59,6 @@ a:hover{
     background-color: #9dd6ef;
 }
 
-.mt-custom{
-    margin-top: 150px;
-}
-
-body{
-    margin-top: 0;
-}
 
 @media (max-width: 360px) {
     p {
