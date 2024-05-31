@@ -133,7 +133,7 @@ input {
  media query for a smaller screen
 =================================
 **/
-@media (max-width: 767px) {
+@media (max-width: 576px) {
     iframe {
         margin: 4% 0 0 4%; /* Put the map to the middle */
         width: 25rem;
