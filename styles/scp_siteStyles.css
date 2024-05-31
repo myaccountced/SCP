@@ -59,22 +59,12 @@ a:hover{
     background-color: #9dd6ef;
 }
 
-.mt-custom{
-    margin-top: 150px;
-}
 
-body{
-    margin-top: 0;
-}
-
-@media (max-width: 767px) {
+@media (max-width: 576px) {
     p {
         font-size: 18px;
     }
 
-    body{
-        margin-top: 210px;
-    }
 }
 
 
