@@ -135,7 +135,7 @@ input {
 **/
 @media (max-width: 767px) {
     iframe {
-        margin: 2% 0 0 1%; /* Put the map to the middle */
+        margin: 4% 0 0 4%; /* Put the map to the middle */
         width: 25rem;
         height: 20rem;
     }
