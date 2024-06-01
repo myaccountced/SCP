@@ -1,0 +1,67 @@
+/**
+=================================
+ header styles
+=================================
+**/
+
+.navbar-nav .nav-item {
+    margin-bottom: 10px; /* Adjust as needed for spacing between items */
+}
+
+.navbar-toggler-bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.navbar-toggle-position{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px
+}
+
+.bg-green{
+    background-color: #009E0F;
+}
+
+.active{
+    background-color: #eda469;
+    border-radius: 10px;
+}
+
+.nav-link{
+    padding: 5px; /* Adjust as needed for spacing between rows */
+}
+
+#linkList{
+    text-align: center;
+}
+
+
+/**
+=================================
+ media query for a smaller screen
+=================================
+**/
+@media only screen and (max-width: 576px) {
+
+    .navbar-collapse {
+        flex-direction: column;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+        margin-bottom: 5px; /* Adjust as needed for spacing between items */
+    }
+}
+
+@media (max-width: 576px) { /* Adjust breakpoint as needed */
+
+}

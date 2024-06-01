@@ -2,10 +2,358 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCP Advice</title>
+
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <script src="scripts/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/scp_header_styles.css">
+    <link rel="stylesheet" href="styles/scp_advice_styles.css">
+    <link rel="stylesheet" href="styles/scp_siteStyles.css">
+    <link rel="stylesheet" href="styles/scp_footerStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body>
 
+<body class="bg-bodyColour">
+<nav class="w-100 border border-black navbar bg-green navbar-expand-sm">
+    <div class="container justify-content-center">
+        <div class="row align-items-center w-100">
+            <div id="logo-container" class="col-12 col-sm-6 p-2 d-flex justify-content-center">
+                <div class="bg-white d-flex rounded-5 d-inline-block p-3 pt-0 pb-0">
+                    <img src="images/logo.png" alt="Second Chance Pups logo image" width="140px"/>
+                    <div class="d-flex flex-column align-items-center">
+                        <p class="m-0 h3">Second Chance</p>
+                        <p class="m-0 h3">Pups</p>
+                        <p class="m-0 h4">Rescue and</p>
+                        <p class="m-0 h4">Rehabilitation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 d-flex justify-content-end">
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul id="linkList" class="navbar-nav w-100 justify-content-center">
+                        <li class="nav-item mb-3">
+                            <a class="fas bi bi-house-door-fill nav-link text-center text-nowrap" href="scp_home.html">Home</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a class="fas fa-paw nav-link nav-link text-center text-nowrap" href="scp_adoption.html">Adopt</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a class="fas bi bi-info-circle-fill nav-link text-center text-nowrap active" href="scp_advice.html">Dog Advice</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a class="fas bi bi-telephone-fill nav-link text-center text-nowrap" href="scp_contact.html">Contact/Find Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!--body-->
+<div class="container d-flex flex-column justify-content-center align-items-center" id="lifeWithAPet">
+    <h1 class="mt-4">Life with a Pet</h1>
+    <p class="ms-xxl-5 me-xxl-5 fs-4 text-center">At our sanctuary, we believe that every pet deserves a loving home,
+        and every home deserves the love of a furry friend. Whether you're a seasoned pet parent or embarking on the
+        journey for the first time, the bond between human and dog transcends words. Join us in celebrating the magic
+        of rescue, where each adoption not only changes the life of a dog but also enriches the lives of those who
+        welcome them into their homes. Together, let's make tails wag and hearts smile.</p>
+
+    <iframe id="video" width="760" height="515" src="https://www.youtube.com/embed/GpoLQ3O_kwA?si=QQ80xS8dfQqIn8v8"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+</div>
+
+
+<h1 class="text-center mt-4 mb-4">Supplies Checklist</h1>
+<div class="container">
+    <!--accordion stuff-->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item" >
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed text-nowrap bg-panel fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Dog Necessities for the Car Ride Home
+                </button>
+            </h2>
+
+            <div id="flush-collapseOne" class="accordion-collapse collapse bg-panel" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>
+                        One of the first experiences you’ll share with your new pup is the car ride home. Make sure the ride home is comfortable for everyone with these new dog essentials:
+                    </p>
+                    <img src="images/dogSupp1.png" height="320" width="388" class=""/>
+                    <ul>
+                        <li><strong>Dog Collar</strong> - Although a slip lead takes the place of both a collar and a leash, you’ll want your new pup to have a real dog collar as soon as possible. Don’t forget to attach an identification tag to your pup’s collar with important information, such as your pet’s name and your phone number.</li>
+                        <li><strong>Pet carrier or crate</strong> - While it may be tempting to drive home with your dog on your lap, the fact remains that a crate or pet carrier is the safest way for your furry friend to travel</li>
+                        <li><strong>Paper towels</strong> - Most adult dogs have plenty of experience riding in cars, but new puppies will often get carsick. You may want to keep a roll of paper towels in your car so you can contain potential messes.</li>
+                        <li><strong>Food and water</strong> - If you’re traveling a long distance to pick up your new furry friend, you’ll need to pack some food and water for your pet. But remember to go easy on the food — you don’t want to upset your pup’s tummy!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed bg-panel fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Dog Necessities for Feeding
+                </button>
+            </h2>
+
+            <div id="flush-collapseTwo" class="accordion-collapse collapse bg-panel" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>
+                        Don’t forget to check in with animal rescue at least a few days before picking up your dog and find out which dog food brand they're currently eating. Even if you decide to switch your dog's food, you'll want to slowly transition them to the new food to avoid an upset tummy.
+                    </p>
+                    <img src="images/dogSupp2.png" height="320" width="388"/>
+                    <ul>
+                        <li><strong>Food bowls</strong> - From slow feeder bowls to elevated food bowls, there’s a dog food bowl for every pup these days. For example, if your pet has a short snout, you might want to buy a bowl with a tilted structure that makes it easier for them to eat. Likewise, if you have a large breed dog, you can buy a set of elevated dog food bowls that allows for neater and more comfortable eating.</li>
+                        <li><strong>Dog food place mat (optional)</strong> - Whether you have a messy eater or just want to jazz up your dog’s food station, a dog placemat is a fun and functional addition to your home.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed bg-panel fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Dog Necessities for Playtime and Entertainment
+                </button>
+            </h2>
+
+            <div id="flush-collapseThree" class="accordion-collapse collapse bg-panel" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>
+                        Your sweet little pup needs both physical and mental stimulation to stay happy, healthy and fit. While walking is undoubtedly a great activity for your dog, there will likely be times when you find yourself stuck indoors with a bored dog. Fortunately, there are plenty of items that can help your furry friend release some of that pent-up puppy energy.
+                    </p>
+                    <img src="images/dogSupp3.png" height="320" width="388"/>
+                    <ul>
+                        <li><strong>Teething toys</strong> - Puppies start teething around four to five months of age, so you’ll want to have plenty of chew toys on hand to ease their discomfort.</li>
+                        <li><strong>Interactive toys</strong> - Interactive toys help build the bond between you and your pup. For example, you could play fetch with a ball or tug-of-war with a rope toy.</li>
+                        <li><strong>Enrichment toys</strong> - Designed to work your pup’s brain, enrichment toys are fun to bust out on rainy days. Treat dispensers, puzzle toys and licking pads are just a few examples of enrichment toys for dogs.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed bg-panel fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Dog Necessities for Your Daily Walks
+                </button>
+            </h2>
+
+            <div id="flush-collapseFour" class="accordion-collapse collapse bg-panel" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>
+                        Daily physical activity is important for your dog, but just letting them run around in the backyard every day isn't going to cut it. To keep Fido happy and healthy, you also need to be taking them out for regular walks.
+                    </p>
+                    <img src="images/dogSupp4.png" height="320" width="388"/>
+                    <ul>
+                        <li><strong>Dog harness</strong> - Whether your dog has zero leash manners or goes ballistic whenever they see a squirrel, a high-quality dog harness will help keep the pressure off your dog’s sensitive neck and give you more control over your furry friend.</li>
+                        <li><strong>Dog leash</strong> - There are many different styles of dog leashes, and the right one for you depends on numerous factors, such as the size and strength of your dog.</li>
+                        <li><strong>Poop bags</strong> - Not only is picking up your poop the neighborly thing to do, but it also helps prevent the spread of disease.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+                <button class="accordion-button collapsed bg-panel fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    Dog Necessities for Grooming
+                </button>
+            </h2>
+
+            <div id="flush-collapseFive" class="accordion-collapse collapse bg-panel" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>
+                        Taking your dog to a groomer can be stressful — not to mention expensive. Fortunately, there are plenty of at-home grooming tools to help you get the job done in a more comfortable setting.
+                    </p>
+                    <img src="images/dogSupp5.png" height="320" width="388"/>
+                    <ul>
+                        <li><strong>Nail clippers or grinders</strong> - There are two ways to shorten your dog’s nails: clipping them with scissor-style clippers or grinding them down with an electricity-powered rotary tool (aka, grinders).</li>
+                        <li><strong>Dog shampoo</strong> - It’s only a matter of time before your dog rolls in something that makes you want to gag (it happens to the best of us). You can get them back to a squeaky-clean state with a dog shampoo containing naturally-derived ingredients, such as colloidal oatmeal.</li>
+                        <li><strong>Dog brush</strong> - Before your pup hops in the bath, you’ll want to brush down their coat to remove any loose fur or debris. If you have a short-haired dog, look for a brush with shorter bristles. Conversely, if your dog has longer hair, choose a brush with longer bristles.</li>
+                        <li><strong>Dog toothbrush and toothpaste</strong> - Just like people, dogs should ideally have their teeth cleaned twice a day.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<h1 class="text-center mt-4">Suggested Articles</h1>
+    <div class="row mb-3" id="articles">
+
+        <div class="col col-md-5 p-3 article bg-panel">
+            <a href="https://www.akc.org/expert-advice/health/why-do-dogs-run-away/">
+                <div class="image-text-container">
+                    <img src="images/dogArtic1.png" height="178" width="267" alt="" />
+
+                    <div class="article-content fw-medium">
+                        <h4>Why Do Dogs Run Away?</h4>
+                        <p>You open your front door to pick up a package, then your dog bolts out and is gone. Or you’re taking a peaceful walk with your dog, and suddenly they’re chasing a rabbit, out of sight. One of a dog owner’s worst nightmares is having their dog run away.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col col-md-5 p-3 article bg-panel">
+            <a href="https://www.akc.org/expert-advice/health/dry-your-dog/">
+                <div class="image-text-container">
+                    <img src="images/dogArtic2.png" height="178" width="267" alt="" />
+
+                    <div class="article-content fw-medium">
+                        <h4>How to Dry Your Dog Completely </h4>
+                        <p>When your dog is wet — whether it’s from a bath, swimming, or a walk in damp weather — it’s important to dry them thoroughly. Drying your dog helps keep them warm, prevents mats, tangles, and bacteria growth, and helps eliminate the “wet dog” smell.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col col-md-5 p-3 article bg-panel">
+            <a href="https://www.akc.org/expert-advice/health/dog-noise-sensitive/">
+                <div class="image-text-container">
+                    <img src="images/dogArtic3.png" height="178" width="267" alt="" />
+
+                    <div class="article-content fw-medium">
+                        <h4>Is Your Dog Noise Sensitive? Sources of Anxiety You May Not Even Notice</h4>
+                        <p>A study of 13,700 pet dogs showed that noise sensitivity was the most common trait to cause anxiety in dogs, showing up in almost one-third of the dogs.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col col-md-5 p-3 article bg-panel">
+            <a href="https://www.akc.org/expert-advice/health/dog-clothes-weather-safety/">
+                <div class="image-text-container">
+                    <img src="images/dogArtic4.png" height="178" width="267" alt="" />
+
+                    <div class="article-content fw-medium">
+                        <h4>How to Get Your Dog Comfortable Wearing Clothes for Hot and Cold Weather</h4>
+                        <p>There are clothes for dogs of all sizes and a variety of reasons you might want to dress your dog. Sweaters, shirts, and coats are especially useful for keeping hairless and short-coated dogs warm and comfortable during cold weather.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col col-md-5 p-3 article bg-panel">
+            <a href="https://www.akc.org/expert-advice/health/health-benefits-of-dog-ownership/">
+                <div class="image-text-container">
+                    <img src="images/dogArtic5.png" height="178" width="267" alt="" />
+
+                    <div class="article-content fw-medium">
+                        <h4>The Health Benefits of Being a Dog Owner</h4>
+                        <p>From reducing stress levels to helping improve physical fitness, owning a dog can actually be a game-changer for your overall well-being. Aside from the fact that they’re devoted to us, here are some of the health benefits of having a dog.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col col-md-5 p-3 article bg-panel">
+            <a href="https://www.phillyvoice.com/dog-behavior-what-do-these-actions-mean-doggie-designer-0599973/">
+                <div class="image-text-container">
+                    <img src="images/dogArtic6.png" height="178" width="267" alt="" />
+
+                    <div class="article-content fw-medium">
+                        <h4>Dog Behavior: What Do These 9 Actions Mean?</h4>
+                        <p>Dogs may not be able to talk, but they have a variety of ways in which they can and do communicate with us. Some of these communicative techniques are intentional.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col col-md-5 p-3 article bg-panel">
+            <a href="https://www.rd.com/list/foods-dogs-cant-eat/">
+                <div class="image-text-container">
+                    <img src="images/dogArtic7.png" height="178" width="267" alt="" />
+
+                    <div class="article-content fw-medium">
+                        <h4>18 Human Foods Dogs Can’t Eat, According to Vets</h4>
+                        <p>What's good (or what tastes good) for us isn't necessarily great for our fur babies. Vets tell us about the foods dogs can't eat—and why.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+<footer class="bg-footerColour border border-black pt-1 pb-0">
+    <div class="container ">
+        <div class="row">
+            <!-- About Section appears at tops of footer on mobile, uses middle column on full browser view -->
+            <div class="col-12 col-md-4 order-1 order-md-2">
+                <div id="footerAbout" class="mb-4 p-2">
+                    <h2 class="text-center d-none d-md-block">About</h2>
+                    <p>Second Chance Pups is a compassionate non-profit organization dedicated to rescuing, rehabilitating,
+                        and rehoming dogs in need. Since 2010, we have committed to giving each dog a new lease on life,
+                        pairing them with loving homes that match their needs. Support our mission by adopting a furry friend,
+                        making a donation, or volunteering your time. Together, we can provide countless second chances to
+                        pups in need!</p>
+                </div>
+            </div>
+
+            <!-- Org and Contact Info appears on desktop as the left column, appears as a column underneath the about section on mobile -->
+            <div class="col-6 col-md-4 order-2 order-md-1">
+                <div id="footerOrg" class="mb-4 d-flex align-items-center p-2">
+                    <img src="images/SecondChancePupsLogoTransparent.png" alt="Second Chance Pups Logo" height="120px" width="120px">
+                    <div class="">
+                        <h2 id="scpNameFooter" class="d-flex flex-column d-md-inline-block align-items-md-start text-md-center"><span>Second</span> <span>Chance</span> <span>Pups</span></h2>
+                        <h4 class="d-none d-md-block text-center">Rescue and Rehabilitation</h4>
+                    </div>
+                </div>
+                <div id="footerContact" class="p-2 pt-0 pb-0">
+                    <h3 class="text-center d-none d-md-block">Contact</h3>
+                    <div class="contactInfo p-1 pt-0 pb-0">
+                        <div>
+                            <span class="contactLabel">Phone: </span><span class="contactContent"><a href="tel:+2061234567">(306) 123-4567</a></span>
+                        </div>
+                        <div>
+                            <span class="contactLabel">Email: </span><span class="contactContent"><a href="mailto:info@secondchancepups.ca">info@secondchancepups.ca</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Socials, Donate, and Charity Info appears as the third column on desktop, appears as second column underneath about on mobile-->
+            <div class="col-6 col-md-4 order-3">
+                <div id="footerSocials" class="mb-4 p-2">
+                    <h2 class="text-center d-none d-md-block">Socials</h2>
+                    <div class="d-flex justify-content-between">
+                        <a href="https://www.facebook.com" class="text-black mr-3"><i class="bi bi-facebook" style="font-size: 3rem;"></i></a>
+                        <a href="https://www.twitter.com" class="text-black mr-3"><i class="bi bi-twitter" style="font-size: 3rem;"></i></a>
+                        <a href="https://www.instagram.com" class="text-black mr-3"><i class="bi bi-instagram" style="font-size: 3rem;"></i></a>
+                        <a href="https://www.youtube.com" class="text-black"><i class="bi bi-youtube" style="font-size: 3rem;"></i></a>
+                    </div>
+                </div>
+                <div id="footerDonate" class="p-2">
+                    <a id="donateBtn" href="#" class="btn btn-primary btn-lg btn-block w-100 btn-donate">DONATE NOW</a>
+                </div>
+                <div id="footerCharity" class="p-3">
+                    <p class="text-center">Non-Profit Organization<br/> EIN: 12-3456789</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Notice centered at the bottom of the page-->
+        <div class="row">
+            <div class="col-12 order-4 p-2 pt-0 pb-0 text-center">
+                <p class="text-italic">© 2024 Second Chance Pups. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
+
 </html>
