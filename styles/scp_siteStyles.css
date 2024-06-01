@@ -5,6 +5,11 @@
 
 /** Site Styling **/
 
+.secret{
+    text-decoration: none;
+    color: #1a1d20;
+}
+
 .btn{
     border-color: #332701;
 }
