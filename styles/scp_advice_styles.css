@@ -55,21 +55,10 @@
 
 /**
 =================================
- media query for a bigger screen
-=================================
-**/
-@media only screen and (min-width: 991px) {
-    /*#lifeWithAPet {*/
-    /*    margin-top: 10%;*/
-    /*}*/
-}
-
-/**
-=================================
  media query for a smaller screen
 =================================
 **/
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 576px) {
     /**
     =================================
      body styles
@@ -106,5 +95,10 @@
 
     .row .col {
         margin: 8% 10% 0 0;
+    }
+
+    /* font-size */
+    .accordion-button { /* for the title of each panel in the accordion */
+        font-size: 22px;
     }
 }
